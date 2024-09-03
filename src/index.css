@@ -1,0 +1,1186 @@
+.body{
+  overflow-x: hidden;
+}
+
+/* navbar */
+.navbar{
+  padding: 15px;
+}
+
+.navbar .navbar-brand{
+  padding: 0;
+  margin-top: -10px;
+}
+
+.navbar .navbar-brand img{
+  width: 100px;
+}
+
+.navbar .ms-auto{
+  font-family: "Be Vietnam Pro", sans-serif;
+  gap: 20px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+/* home */
+.home{
+  margin: 30px 0;
+  padding: 110px 0 130px 0;
+}
+
+.home .content-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.home .content-flex .content-text{
+  width: 47%;
+}
+
+.home .content-text h3{
+  font-size: 36px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+}
+
+.home .content-text h3 .wisata{
+  color: #004AAD;
+  display: inline-block;
+  position: relative;
+}
+
+.home .content-text h3 .wisata::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #F56E12;
+  border-radius: 20px;
+  bottom: 0;
+}
+.home .content-text h3 .lingkungan {
+  display: inline-block;
+  position: relative; /* Ensure relative positioning for child pseudo-element */
+  color: white;
+  padding: 2px 7px;
+  background-color: #3FD486;
+  transform: rotate(-1deg);
+  border-radius: 4px;
+  margin: 3px 0 0 0;
+}
+
+.home .content-text p{
+  font-size: 16px;
+  font-family: "Noto Serif", sans-serif;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-top: 18px;
+}
+
+.home .content-text button{
+  border: none;
+  background-color: #004AAD;
+  color: #FFFFFF;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 25px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0px 0px rgba(245,110,18,0.75);
+}
+
+.home .content-flex .content-img-grid{
+  width: 50%;
+  display: grid;
+  right: 0;
+  grid-template-columns: repeat(8, 11%);
+  grid-template-rows: repeat(12, 7%);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  margin-top: -30px;
+}
+
+.home .content-img-grid img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.img.top { 
+  grid-area: 1 / 2 / 6 / 5; 
+}
+
+.img.right { 
+  grid-area: 3 / 5 / 8 / 9; 
+}
+
+.img.bottom { 
+  grid-area: 6 / 1 / 11 / 5;
+}
+
+.img.left { 
+  grid-area: 8 / 5 / 13 / 8;
+}
+
+.about{
+  margin: 40px 0;
+  padding: 100px 0;
+}
+
+.about .content-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .content-flex .text-left{
+  width: 45%;
+}
+
+.about .content-flex .text-left .title{
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 600;
+}
+
+.about .text-left .title span {
+  display: inline-block;
+  position: relative;
+  color: white;
+  padding: 2px 7px;
+  background-color: #3FD486;
+  transform: rotate(1deg);
+  border-radius: 4px;
+  margin: 3px 0 0 0;
+}
+
+.about .content-flex .text-left p{
+  font-family: "Noto Serif", sans-serif;
+  margin-top: 10px;
+}
+
+.about .content-flex .logo{
+  width: 45%;
+}
+.about .content-flex .logo img{
+  width: 100%;
+}
+
+.service{
+  margin: 50px 0;
+  padding: 70px 0;
+}
+
+.service .img-bg {
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(to bottom, 
+                                    rgba(0, 0, 0, 0.4) 0%, 
+                                    rgba(255, 255, 255, 0) 50%, 
+                                    rgba(0, 0, 0, 0.9) 100%), 
+                    url('/src/assets/img/view/21.png');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 0 !important;
+}
+
+.shape-wave-right{
+  position: absolute;
+  right: 0;
+  margin-top: -70px;
+}
+
+.shape-wave-right img{
+  width: 300px;
+}
+
+.shape-wave-left{
+  position: absolute;
+  left: 0;
+  margin-top: 400px;
+  transform: rotate(180deg);
+}
+
+.shape-wave-left img{
+  width: 300px;
+}
+
+.service .title{
+  text-align: center;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 800;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 0 #F56E12;
+  z-index: 1 !important;
+  position: relative;
+  margin: 30px 0;
+  padding: 20px 0;
+}
+
+.service .title h2{
+  font-size: 38px;
+}
+
+.service .card-content{
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 70px 0 0 0;
+}
+
+.service .card-content .card{
+  width: 23%;
+  height: 160px;
+  border-radius: 15px;
+  padding: 20px 20px;
+  text-align: center;
+  box-shadow: 0 1px 4px #c4c4c4;
+}
+
+.service .card-content .card img{
+  width: 70px;
+  margin: 0 auto;
+  filter: drop-shadow(1.5px 1.5px 0px #3FD486);
+}
+
+.service .card-content .card p{
+  margin: 20px 0 0 0;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.offer{
+  margin: 80px 0;
+  padding: 80px 0 40px 0;
+  text-align: center;
+}
+
+.offer .title {
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: #ffffff;
+  background-color: #3FD486;
+  padding: 8px 15px;
+  border-radius: 8px;
+  width: fit-content;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative; /* Ensure relative positioning for ::after */
+  z-index: 1; /* Ensure title is above ::after */
+  border-bottom: 3px solid #004AAD;
+}
+
+.offer .title h2 {
+  font-weight: 600;
+  margin: 0;
+}
+
+.offer .content .popular-offer{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px 0;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.offer .content .popular-offer .card-offer{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.offer .content .popular-offer img{
+  width: 200px;
+  border-radius: 10px;
+  display: inline-block;
+  overflow: hidden;
+ }
+
+ .offer .content .popular-offer .card-offer .image-container {
+  position: relative;
+  width: 32% !important;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.offer .content .popular-offer .card-offer .image-container img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.offer .content .popular-offer .card-offer .image-container .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
+  color: #fff;
+  display: flex;
+  align-items: end;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: left;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.offer .content .popular-offer .card-offer .image-container:hover .overlay {
+  opacity: 1;
+}
+
+.offer .content .popular-offer .card-offer .image-container:hover img {
+  transform: scale(1.1);
+}
+
+.offer .content .popular-offer .card-offer .overlay .text-offer small {
+  display: block;
+  font-size: 14px;
+  font-family: "Noto Serif", sans-serif;
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+
+.offer .content .popular-offer .card-offer .overlay .text-offer h2 {
+  margin: 0;
+  font-size: 24px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  margin-bottom: 5px;
+}
+.offer .content .popular-offer .card-offer .overlay .text-offer p {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.6;
+  font-family: "Noto Serif", sans-serif;
+  margin-bottom: 15px;
+}
+
+.offer .content .popular-offer .card-offer .overlay .text-offer button {
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  padding: 12px 25px;
+  color: #FFFFFF;
+  font-weight: 600;
+  background-color: #004AAD;
+  box-shadow: 4px 4px 0px -1px #ffffff;
+  font-family: "Be Vietnam Pro", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.offer .content .popular-offer .card-offer .overlay .text-offer button:hover {
+  background-color: #e67e22; /* Darker shade for hover effect */
+}
+
+.modal.show .modal-dialog{
+  margin: 0 auto !important;
+  max-width: 70%;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal-content{
+  width: 100%;
+  margin: 20px auto;
+}
+
+.modal-body{
+  padding: 30px 40px;
+}
+
+
+.modal-body img{
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#portfolio{
+  box-shadow: 0 -4px 4px #c4c4c4, 0 4px 4px #c4c4c4;
+  padding-bottom: 70px !important;
+}
+
+#portfolio h2.fw-bold{
+  font-family: "Poppins", sans-serif;
+  align-self: center;
+  display: inline-block;
+  position: relative;
+}
+#portfolio h2.fw-bold::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    border-radius: 20px;
+    height: 10px;
+    background: linear-gradient(to left, rgba(255,0,0,0), rgba(255, 150, 54, 1));
+}
+
+#portfolio h2 span{
+  color: #004AAD;
+}
+
+#portfolio p{
+  font-family: "Noto Serif", sans-serif;
+}
+#portfolio a button{
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: #004AAD;
+  box-shadow: 3px 3px 0px 0px #3FD486;
+  color: white;
+}
+
+.slider-for {
+  width: 65%;
+  margin: 0 auto;
+  position: relative; /* Ensure that slider container is relative for absolute positioning */
+}
+
+.slider-nav {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.slider-for h4 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 30px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 100;
+  padding: 10px;
+}
+
+.slider-for h4::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: -1 !important;
+  height: 75%;
+  background: linear-gradient(to left, rgba(255,0,0,0), rgba(255, 150, 54, 1));
+}
+
+.slider-for p{
+    font-family: "Montserrat", sans-serif;
+}
+
+.slider-for button {
+  padding: 10px 28px;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+}
+
+.slider-for .fw-bold.button-blur {
+  backdrop-filter: blur(4px) !important;
+  color: white;
+  background-color: rgba(229, 231, 235, 0.2) !important;
+}
+
+.slider-for .text-white.position-absolute {
+  margin: -140px 0 0 30px !important;
+}
+
+.slider-for .d-flex.gap-4 {
+  margin: 40px 0 0 0;
+}
+
+.slick-prev, .slick-next {
+  z-index: 10; /* Ensure navigation buttons are above the content */
+}
+
+.slick-prev, .slick-rtl .slick-prev {
+  color: rgb(255, 255, 255) !important;
+  background-color: #a1a1a1;
+  width: 30px !important;
+  height: 37px !important;
+  border-radius: 5px;
+  left: 5px !important;
+  opacity: 0.9 !important;
+  position: absolute; /* Ensure they are positioned absolutely */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical center */
+}
+
+.slick-next, .slick-rtl .slick-next {
+  color: rgb(255, 255, 255) !important;
+  background-color: #a1a1a1;
+  width: 30px !important;
+  height: 37px !important;
+  border-radius: 5px;
+  right: 20px !important;
+  opacity: 0.9 !important;
+  position: absolute; /* Ensure they are positioned absolutely */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical center */
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 20px !important;
+  font-weight: 800;
+}
+.sideWrap{
+  right: -400px;
+  top: 100px;
+  transform: rotate(45deg);
+  font-size: 48px;
+  width: 800px;
+  height: 500px;
+}
+
+.partners{
+  width: 60%;
+  margin-top: 80px !important;
+  margin-bottom: 80px !important;
+}
+
+.realtour img{
+  width: 190px;
+  height: 180px;
+  object-fit: contain;
+  margin-top: -10px;
+}
+
+.nyamanin img{
+  width: 200px;
+  height: 190px;
+  object-fit: contain;
+  margin-top: -5px;
+}
+
+.AYP img{
+  width: 240px;
+  height: 190px;
+  object-fit: contain;
+  margin-top: -5px;
+}
+
+.TMF img{
+  width: 240px;
+  height: 190px;
+  object-fit: contain;
+  margin-top: -5px;
+}
+
+.TMC img{
+  width: 240px;
+  height: 190px;
+  object-fit: contain;
+  margin-top: -5px;
+}
+
+.kronika img, .habatour img{
+  width: 190px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.bahana img{
+  width: 210px;
+  height: 200px;
+  object-fit: contain;
+  margin-top: -9px;
+}
+
+.apostrof img, .halakah img{
+  width: 180px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.slider-for button{
+  padding: 10px 28px;
+  border-radius: 30px;
+  border: none;
+}
+.slider-for .fw-bold.button-blur{
+  backdrop-filter: blur(4px) !important;
+  color: white;
+  background-color: rgba(229, 231, 235, 0.2) !important;
+}
+
+.slider-for .text-white.position-absolute{
+  margin: -110px 0 0 30px;
+}
+
+.slider-for .d-flex.gap-4{
+  margin: 40px 0 0 0;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+  color: rgb(255, 255, 255) !important;
+  background-color: #a1a1a1;
+  width: 30px !important;
+  height: 37px !important;
+  border-radius: 5px;
+  right: 5px !important;
+  opacity: 0.9 !important;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-prev{
+  color: rgb(255, 255, 255) !important;
+  background-color: #a1a1a1;
+  width: 30px !important;
+  height: 37px !important;
+  border-radius: 5px;
+  left: 5px !important;
+  opacity: 0.9 !important;
+}
+
+.swiper-button-next:after{
+  font-size: 20px !important;
+  font-weight: 800;
+}
+.swiper-button-prev:after{
+  font-size: 20px !important;
+  font-weight: 800;
+}
+
+.wave-right-client{
+  position: absolute;
+  right: 0;
+  margin-top: -170px;
+}
+
+.wave-right-client img{
+  width: 300px;
+}
+
+
+/* footer */
+footer {
+  position: relative;
+  background-image: url("/src/assets/img/view/28.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Noto Serif", serif;
+  box-shadow: 0 -4px 4px #c4c4c4;
+  
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Warna gelap dengan transparansi */
+  z-index: 1; /* Menempatkan lapisan gelap di atas gambar latar belakang */
+}
+
+footer > * {
+  position: relative;
+  z-index: 2; /* Menempatkan konten footer di atas lapisan gelap */
+}
+
+
+@media screen and (max-width: 1200px) {
+  .home .content-text h3{
+    font-size: 34px;
+  }
+
+  .home .content-text p{
+    font-size: 15px;
+  }
+
+  .home .content-flex .content-img-grid{
+    grid-template-columns: repeat(8, 49px);
+    grid-template-rows: repeat(12, 20px);
+  }
+
+  .home .content-text button{
+    font-size: 14px;
+  }
+
+  .about .content-flex .text-left{
+    width: 50%;
+  }
+
+  .about .content-flex .logo{
+    width: 40%;
+  }
+
+  .slider-for {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .slider-nav {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .partners{
+    width: 70%;
+  }
+  
+  .swiper-slide img{
+    width: 180px;
+    height: 150px;
+    object-fit: contain;
+  }
+
+  .bahana{
+    margin-top: 8px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .home .content-flex{
+    flex-direction: column;
+  }
+
+  .home .content-flex .content-text{
+    width: 100%;
+  }
+
+  .home .content-flex .content-img-grid{
+    width: 100%;
+    margin-top: 80px;
+    grid-template-columns: repeat(8, 72px);
+    grid-template-rows: repeat(12, 32px);
+  }
+
+  .home .content-text h3 .lingkungan{
+    margin: 6px 0 0 0;
+  }
+
+  .about{
+    margin: 40px 0;
+    padding: 10px 0 70px 0;
+  }
+
+  .about .content-flex .text-left{
+    width: 100%;
+  }
+
+  .about .content-flex .logo{
+    width: 300px;
+    display: none;
+  }
+
+  .service .card-content{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin: 40px 0 40px 0;
+  }
+
+  .service .card-content .card img{
+    width: 60px;
+    margin: 0 auto;
+    filter: drop-shadow(1.5px 1.5px 0px #3FD486);
+  }
+
+  .offer .title h3{
+    padding: 0 20px 0 70px;
+  }
+
+  .offer .content .popular-offer .card-offer .image-container {
+    position: relative;
+    width: 48% !important;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .modal.show .modal-dialog{
+    max-width: 90%;
+  }
+
+  .slider-for {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .slider-nav {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .home{
+    padding: 80px 0 40px 0;
+  }
+
+  .home .content-flex .content-img-grid{
+    width: 100%;
+    margin-top: 70px;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(12, 25px);
+  }
+
+  .about{
+    margin: 40px 0;
+    padding: 90px 0 70px 0;
+  }
+
+  .service .card-content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .service .card-content .card{
+    width: 30%;
+  }
+
+  .offer .shape-container{
+    width: 200px;
+  }
+
+  .offer .title h3{
+    font-size: 22px;
+  }
+
+  .offer .shape-container .shape1{
+    height: 10px;
+  }
+  .offer .shape-container .shape2{
+    height: 10px;
+  }
+
+  .offer .title h3{
+    margin: 0;
+    padding: 0 10px 0 20px;
+  }
+
+  .offer .content .popular-offer .card-offer .overlay .text-offer small {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .offer .content .popular-offer .card-offer .overlay .text-offer h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .offer .content .popular-offer .card-offer .overlay .text-offer p {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  
+  .offer .content .popular-offer .card-offer .overlay .text-offer button {
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 8px 18px;
+    background-color: #FF9636;
+    box-shadow: 4px 4px 0px -1px #ffffff;
+    transition: background-color 0.3s ease;
+  }
+
+  .modal-body .d-flex img{
+    height: 100%;
+  }
+
+  .modal-body .d-flex .text-image small{
+    font-size: 12px;
+  }
+  .modal-body .d-flex .text-image h2{
+    font-size: 23px;
+    font-weight: 500;
+  }
+  .modal-body .d-flex .text-image p{
+    font-size: 13px;
+  }
+  
+  .slider-for {
+    width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  .slider-nav {
+    width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  .slider-for .text-white.position-absolute{
+    margin: -100px 0 0 30px !important;
+  }
+  
+  .slider-for .d-flex.gap-4{
+    margin: 20px 0 0 0;
+  }
+
+  .partners{
+    width: 90%;
+  }
+  
+  .swiper-slide img{
+    width: 150px;
+    height: 135px;
+    object-fit: contain;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .home{
+    padding: 65px 0 85px 0;
+  }
+
+  .home .content-text h3{
+    font-size: 30px;
+  }
+
+  .home .content-flex .content-img-grid{
+    width: 100%;
+    margin-top: 70px;
+    justify-content: center;
+    grid-template-columns: repeat(8, 10%);
+    grid-template-rows: repeat(12, 7%);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .home .content-text p{
+    font-size: 14px;
+    opacity: 0.8;
+  }
+
+  .about .content-flex .text-left p{
+    font-size: 14px;
+  }
+
+  .service .card-content{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 50px 0 0 0;
+  }
+
+  .service .card-content .card{
+    width: 48%;
+  }
+
+  .shape-wave-right img{
+    width: 200px;
+  }
+
+  .shape-wave-left img{
+    width: 200px;
+  }
+
+  .offer .shape-container{
+    width: 200px;
+    margin-top: -80px;
+  }
+
+  .offer .content .popular-offer .card-offer .image-container {
+    width: 70% !important;
+  }
+
+  .modal-body{
+    padding: 20px 15px;
+  }
+
+  .modal-body .d-flex{
+    flex-direction: column-reverse;
+  }
+
+  .modal-body .d-flex img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .modal-body .d-flex .text-image{
+    width: 100%;
+  }
+
+  .modal-body .d-flex .text-image small{
+    font-size: 11px;
+  }
+  .modal-body .d-flex .text-image h2{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .modal-body .d-flex .text-image p{
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  
+  .slider-for .text-white.position-absolute{
+    margin-left: 15px !important;
+  }
+
+  .slider-for h4{
+    font-size: 18px;
+  }
+  .slider-for h4::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: -1 !important;
+    height: 60%;
+    background: linear-gradient(to left, rgba(255,0,0,0), rgba(255, 150, 54, 1));
+  }
+  
+  .slider-for button{
+    padding: 5px 14px;
+    font-size: 14px;
+    border-radius: 30px;
+    border: none;
+  }
+  
+  .slider-for .text-white.position-absolute{
+    margin: -80px 0 0 30px !important;
+  }
+  
+  .slider-for .d-flex.gap-4{
+    margin: 10px 0 0 0;
+  }
+
+  .slider-for button{
+    padding: 5px 14px;
+    font-size: 12px;
+    border-radius: 30px;
+    border: none;
+  }
+
+  .rounded-circle{
+    display: none;
+  }
+
+  .partners{
+    width: 85%;
+    margin: auto;
+  }
+  
+  .swiper-slide img{
+    width: 130px;
+    height: 120px;
+    object-fit: contain;
+    text-align: center;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    text-align: center;
+    justify-content: center; /* Pusatkan konten dalam slide */
+  }
+
+  
+.AYP img{
+  width: 150px;
+  height: 130px;
+  object-fit: contain;
+  margin-top: 5px;
+}
+
+.TMF img{
+  width: 150px;
+  height: 130px;
+  object-fit: contain;
+  margin-top: 5px;
+}
+
+.TMC img{
+  width: 150px;
+  height: 130px;
+  object-fit: contain;
+  margin-top: 5px;
+}
+}
+
+@media screen and (max-width: 380px) {
+
+  .home .content-text h3{
+    font-size: 28px;
+  }
+
+  .home .content-text p{
+    font-size: 13px;
+    opacity: 0.8;
+  }
+
+  .home .content-flex .content-img-grid{
+    margin-top: 50px;
+  }
+
+  .about .content-flex .text-left p{
+    font-size: 12px;
+  }
+
+  .service .card-content .card{
+    height: 145px;
+  }
+
+  .service .card-content .card img{
+    width: 50px;
+  }
+
+  .service .card-content .card p{
+    margin: 15px 0 0 0;
+    font-size: 13px;
+  }
+
+  .offer .content .popular-offer .card-offer .image-container {
+    width: 100% !important;
+  }
+  
+  .slider-for h4{
+    margin: -30px 0 0 0 !important;
+  }
+
+  .slider-for .text-white.position-absolute{
+    margin: -65px 0 0 30px !important;
+  }
+
+  .slider-for .d-flex.gap-4{
+    margin-top: 5px;
+    gap: 10px !important;
+    height: fit-content;
+  }
+
+  
+  .AYP img{
+    width: 250px;
+    height: 190px;
+    object-fit: contain;
+    margin-top: 5px;
+  }
+  
+  .TMF img{
+    width: 250px;
+    height: 190px;
+    object-fit: contain;
+    margin-top: 5px;
+  }
+  
+  .TMC img{
+    width: 250px;
+    height: 190px;
+    object-fit: contain;
+    margin-top: 5px;
+  }
+
+  .rounded-circle{
+    display: none;
+  }
+
+  .swiper-slide img{
+    width: 100px;
+    height: 90px;
+    object-fit: contain;
+  }
+
+    
+  .nyamanin img{
+    margin: 0;
+  }
+.realtour img{
+  margin-top: -3px !important;
+}
+}
