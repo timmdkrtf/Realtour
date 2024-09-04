@@ -361,11 +361,16 @@
   margin-bottom: 15px;
 }
 
+.offer .text-offer .d-flex{
+  align-items: center;
+  justify-content: space-between;
+}
+
 .offer .content .popular-offer .card-offer .overlay .text-offer button {
   border: none;
   border-radius: 30px;
-  font-size: 15px;
-  padding: 12px 25px;
+  font-size: 14px;
+  padding: 10px 20px;
   color: #FFFFFF;
   font-weight: 600;
   background-color: #004AAD;
@@ -449,23 +454,14 @@
 }
 
 .slider-for h4 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   color: white;
   font-size: 30px;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+  text-shadow: 2px 2px 0px #000000, -1px -1px 0px #F56E12;
   position: relative;
   z-index: 100;
   padding: 10px;
-}
-
-.slider-for h4::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  z-index: -1 !important;
-  height: 75%;
-  background: linear-gradient(to left, rgba(255,0,0,0), rgba(255, 150, 54, 1));
 }
 
 .slider-for p{
@@ -486,7 +482,7 @@
 }
 
 .slider-for .text-white.position-absolute {
-  margin: -140px 0 0 30px !important;
+  margin: -60px 0 0 30px !important;
 }
 
 .slider-for .d-flex.gap-4 {
@@ -854,6 +850,10 @@ footer > * {
     padding: 0 10px 0 20px;
   }
 
+  .offer .content .popular-offer .card-offer .overlay{
+    padding: 15px !important;
+  }
+
   .offer .content .popular-offer .card-offer .overlay .text-offer small {
     font-size: 12px;
     margin-bottom: 5px;
@@ -872,8 +872,8 @@ footer > * {
     border-radius: 30px;
     font-size: 12px;
     padding: 8px 18px;
-    background-color: #FF9636;
-    box-shadow: 4px 4px 0px -1px #ffffff;
+    background-color: #004AAD;
+    box-shadow: 3px 3px 0px -1px #ffffff;
     transition: background-color 0.3s ease;
   }
 
@@ -904,7 +904,7 @@ footer > * {
   }
 
   .slider-for .text-white.position-absolute{
-    margin: -100px 0 0 30px !important;
+    margin: -50px 0 0 30px !important;
   }
   
   .slider-for .d-flex.gap-4{
@@ -1015,16 +1015,7 @@ footer > * {
   }
 
   .slider-for h4{
-    font-size: 18px;
-  }
-  .slider-for h4::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    z-index: -1 !important;
-    height: 60%;
-    background: linear-gradient(to left, rgba(255,0,0,0), rgba(255, 150, 54, 1));
+    font-size: 20px;
   }
   
   .slider-for button{
@@ -1035,7 +1026,7 @@ footer > * {
   }
   
   .slider-for .text-white.position-absolute{
-    margin: -80px 0 0 30px !important;
+    margin: -40px 0 0 30px !important;
   }
   
   .slider-for .d-flex.gap-4{
@@ -1135,7 +1126,7 @@ footer > * {
   }
 
   .slider-for .text-white.position-absolute{
-    margin: -65px 0 0 30px !important;
+    margin: -30px 0 0 15px !important;
   }
 
   .slider-for .d-flex.gap-4{

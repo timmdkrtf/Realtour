@@ -130,13 +130,6 @@ function Trip() {
             <CiGlobe className="position-absolute top-0 start-0 m-4 bg-white p-2 rounded-circle" size={48} />
             <div className="text-white position-absolute">
               <h4 style={{margin:"-40px 0 0 0"}}>{slide.mainTitle}</h4>
-              <div className="d-flex gap-4">
-                <a href="https://api.whatsapp.com/send?phone=6281213779357" target="_blank" rel="noopener noreferrer">
-                  <button className="btn btn-light fw-bold">
-                    Contact Us
-                  </button>
-                </a>
-              </div>
             </div>
           </div>
         ))}
@@ -149,21 +142,6 @@ function Trip() {
           </div>
         ))}
       </Slider>
-
-      {/* Modal Bootstrap */}
-      {/* <Modal show={openModal} onHide={() => setOpenModal(false)} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>{modalData.title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>{modalData.description}</p>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={() => setOpenModal(false)}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal> */}
       </div>
     </section>
   );

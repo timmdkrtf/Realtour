@@ -73,7 +73,7 @@ const Client = () => {
                     },
                     380: {
                         slidesPerView: 2,
-                        spaceBetween: 10, // Sesuaikan jarak antara slide jika diperlukan
+                        spaceBetween: 10,
                     },
                     576: {
                       slidesPerView: 3,
