@@ -65,7 +65,6 @@
   color: white;
   padding: 2px 7px;
   background-color: #3FD486;
-  transform: rotate(-1deg);
   border-radius: 4px;
   margin: 3px 0 0 0;
 }
@@ -151,7 +150,6 @@
   color: white;
   padding: 2px 7px;
   background-color: #3FD486;
-  transform: rotate(1deg);
   border-radius: 4px;
   margin: 3px 0 0 0;
 }
@@ -1082,6 +1080,14 @@ footer > * {
   height: 130px;
   object-fit: contain;
   margin-top: 5px;
+}
+
+.realtour img{
+  margin-top: -5px;
+}
+
+.nyamanin img{
+  margin-top: -0px;
 }
 }
 
