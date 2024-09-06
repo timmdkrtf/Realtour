@@ -57,6 +57,7 @@ const Client = () => {
                 loop={true}
                 freeMode={true}
                 navigation={true}
+                centeredSlides={true}
                 autoplay={{
                     delay: 800,
                     disableOnInteraction: false,
@@ -84,10 +85,12 @@ const Client = () => {
                     768: {
                       slidesPerView: 3,
                       spaceBetween: 40,
+                      centeredSlides: true,
                     },
                     1024: {
                       slidesPerView: 3,
                       spaceBetween: 40,
+                      centeredSlides: true,
                     },
                   }}
                 className='items-center justify-center'>
