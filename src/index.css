@@ -917,6 +917,13 @@ footer > * {
     width: 150px;
     height: 135px;
     object-fit: contain;
+    text-align: center;
+  }
+
+  .swiper-slide {
+    display: flex;
+    text-align: center;
+    justify-content: center; /* Pusatkan konten dalam slide */
   }
 
 }

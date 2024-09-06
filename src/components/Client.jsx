@@ -74,10 +74,12 @@ const Client = () => {
                     380: {
                         slidesPerView: 2,
                         spaceBetween: 10,
+                        centeredSlides: true,
                     },
                     576: {
                       slidesPerView: 2,
-                      spaceBetween: 10,
+                      spaceBetween: 20,
+                      centeredSlides: true,
                     },
                     768: {
                       slidesPerView: 3,
