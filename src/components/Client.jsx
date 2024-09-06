@@ -77,7 +77,7 @@ const Client = () => {
                         centeredSlides: true,
                     },
                     576: {
-                      slidesPerView: 2,
+                      slidesPerView: 3,
                       spaceBetween: 20,
                       centeredSlides: true,
                     },
