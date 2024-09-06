@@ -638,6 +638,12 @@
   font-weight: 800;
 }
 
+.swiper-slide {
+  display: flex;
+  text-align: center;
+  justify-content: center; /* Pusatkan konten dalam slide */
+}
+
 .wave-right-client{
   position: absolute;
   right: 0;
