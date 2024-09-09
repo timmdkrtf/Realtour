@@ -504,6 +504,45 @@ transition-property: width, left;
   color: white;
 }
 
+.filter {
+  margin: 0 0 20px 0;
+}
+
+.filter .button-filter{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.filter .button-filter button.active {
+  background-color: #F56E12;
+  color: #FFFFFF;
+  font-weight: 600;
+  box-shadow: 0 2px 0 #004AAD;
+}
+
+.filter .button-filter button{
+  border: 1px solid #F56E12;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #3c3c3c;
+  transition: 0.1s;
+}
+
+.filter .button-filter button:hover{
+  background-color: #F56E12;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.filter .button-filter button:focus{
+  background-color: #F56E12;
+  color: #FFFFFF;
+  font-weight: 600;
+  box-shadow: 0 2px 0 #004AAD;
+}
+
 .slider-for {
   width: 65%;
   margin: 0 auto;

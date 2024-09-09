@@ -17,38 +17,101 @@ function Trip() {
 
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
+  const [activeSlide, setActiveSlide] = useState('study-tour');
+
+  const studyTourRef = useRef(null);
 
   useEffect(() => {
     setNav1(sliderForRef.current);
     setNav2(sliderNavRef.current);
   }, []);
 
-  const slides = [
-    {
-      mainTitle: "Wisata Jeep Bromo",
-      img: trip1,
-    },
-    {
-      mainTitle: "Wisata dengan Lingkungan",
-      img: trip2,
-    },
-    {
-      mainTitle: "Memahami Objek Sekitar",
-      img: trip3,
-    },
-    {
-      mainTitle: "Study Tour SMP Insan Kamil",
-      img: trip4,
-    },
-    {
-      mainTitle: "Wisata Mengelilingi Alam",
-      img: trip5,
-    },
-    {
-      mainTitle: "Wisata yang menyenangkan",
-      img: trip6,
-    },
-  ];
+  useEffect(() => {
+    if (studyTourRef.current) {
+      studyTourRef.current.focus();
+    }
+  }, []);
+
+  const slides = {
+    'study-tour': [
+      {
+        mainTitle: "Wisata Jeep Bromo",
+        img: trip1,
+      },
+      {
+        mainTitle: "Wisata dengan Lingkungan",
+        img: trip2,
+      },
+      {
+        mainTitle: "Memahami Objek Sekitar",
+        img: trip3,
+      },
+      {
+        mainTitle: "Study Tour SMP Insan Kamil",
+        img: trip4,
+      },
+      {
+        mainTitle: "Wisata Mengelilingi Alam",
+        img: trip5,
+      },
+      {
+        mainTitle: "Wisata yang menyenangkan",
+        img: trip6,
+      },
+    ],
+    'private-trip': [
+      {
+        mainTitle: "Wisata Jeep Bromo",
+        img: trip1,
+      },
+      {
+        mainTitle: "Wisata dengan Lingkungan",
+        img: trip2,
+      },
+      {
+        mainTitle: "Memahami Objek Sekitar",
+        img: trip3,
+      },
+      {
+        mainTitle: "Study Tour SMP Insan Kamil",
+        img: trip4,
+      },
+      {
+        mainTitle: "Wisata Mengelilingi Alam",
+        img: trip5,
+      },
+      {
+        mainTitle: "Wisata yang menyenangkan",
+        img: trip6,
+      },
+    ],
+    'outing': [
+      {
+        mainTitle: "Wisata Jeep Bromo",
+        img: trip1,
+      },
+      {
+        mainTitle: "Wisata dengan Lingkungan",
+        img: trip2,
+      },
+      {
+        mainTitle: "Memahami Objek Sekitar",
+        img: trip3,
+      },
+      {
+        mainTitle: "Study Tour SMP Insan Kamil",
+        img: trip4,
+      },
+      {
+        mainTitle: "Wisata Mengelilingi Alam",
+        img: trip5,
+      },
+      {
+        mainTitle: "Wisata yang menyenangkan",
+        img: trip6,
+      },
+    ],
+  };
 
   const settingsFor = {
     slidesToShow: 1,
@@ -60,7 +123,7 @@ function Trip() {
     ref: sliderForRef,
     responsive: [
       {
-        breakpoint: 576, // Pada layar dengan lebar 768px atau kurang
+        breakpoint: 576,
         settings: {
           arrows: false,
         },
@@ -78,13 +141,13 @@ function Trip() {
     ref: sliderNavRef,
     responsive: [
       {
-        breakpoint: 768, // Pada layar dengan lebar 768px atau kurang
+        breakpoint: 768,
         settings: {
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 400, // Pada layar dengan lebar 768px atau kurang
+        breakpoint: 400,
         settings: {
           arrows: false,
           slidesToShow: 2.35,
@@ -99,41 +162,65 @@ function Trip() {
       className="bg-light text-dark min-vh-100 d-flex flex-column align-items-center justify-content-center p-3"
     >
       <div className="container">
-      <div className="row w-100 py-5">
-        <div className="col-12 col-md-4 col-sm-12">
-          <h2 className="fw-bold">Perjalanan <span>Kami</span></h2>
+        <div className="row w-100 py-5">
+          <div className="col-12 col-md-4 col-sm-12">
+            <h2 className="fw-bold">Perjalanan <span>Kami</span></h2>
+          </div>
+          <div className="col-12 col-md-4 col-sm-12">
+            <p>
+              Rasakan pengalaman perjalanan penuh kesan dan menyenangkan bersama Realtour, Join us now!
+            </p>
+          </div>
+          <div className="col-12 col-md-4 col-sm-12" style={{margin:"0 0 0 auto", textAlign:"end", alignSelf:"center"}}>
+            <a href="https://instagram.com/realtour.co.id" target="_blank"><button className="btn" style={{padding:"12px 28px", borderRadius:"15px"}}>
+              Join us Now!
+            </button></a>
+          </div>
         </div>
-        <div className="col-12 col-md-4 col-sm-12">
-          <p>
-            Rasakan pengalaman perjalanan penuh kesan dan menyenangkan bersama Realtour, Join us now!
-          </p>
-        </div>
-        <div className="col-12 col-md-4 col-sm-12" style={{margin:"0 0 0 auto", textAlign:"end", alignSelf:"center"}}>
-          <a href="https://instagram.com/realtour.co.id" target="_blank"><button className="btn" style={{padding:"12px 28px", borderRadius:"15px"}}>
-            Join us Now!
-          </button></a>
-        </div>
-      </div>
 
-      <Slider {...settingsFor} className="slider-for">
-        {slides.map((slide, index) => (
-          <div key={index} className="image-wrapper position-relative">
-            <img src={slide.img} alt="slide" className="img-fluid rounded w-100" />
-            <CiGlobe className="position-absolute top-0 start-0 m-4 bg-white p-2 rounded-circle" size={48} />
-            <div className="text-white position-absolute">
-              <h4 style={{margin:"-40px 0 0 0"}}>{slide.mainTitle}</h4>
+        <div className="filter">
+          <div className="button-filter">
+            <button 
+              ref={studyTourRef}
+              className={activeSlide === 'study-tour' ? 'active' : ''}
+              onClick={() => setActiveSlide('study-tour')}
+            >
+              Study Tour
+            </button>
+            <button 
+              className={activeSlide === 'private-trip' ? 'active' : ''}
+              onClick={() => setActiveSlide('private-trip')}
+            >
+              Private Trip
+            </button>
+            <button 
+              className={activeSlide === 'outing' ? 'active' : ''}
+              onClick={() => setActiveSlide('outing')}
+            >
+              Outing
+            </button>
+          </div>
+        </div>
+
+        <Slider {...settingsFor} className="slider-for">
+          {slides[activeSlide].map((slide, index) => (
+            <div key={index} className="image-wrapper position-relative">
+              <img src={slide.img} alt="slide" className="img-fluid rounded w-100" />
+              <CiGlobe className="position-absolute top-0 start-0 m-4 bg-white p-2 rounded-circle" size={48} />
+              <div className="text-white position-absolute">
+                <h4 style={{margin:"-40px 0 0 0"}}>{slide.mainTitle}</h4>
+              </div>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
 
-      <Slider {...settingsNav} className="slider-nav mt-4 pt-3">
-        {slides.map((slide, index) => (
-          <div key={index} className="px-2">
-            <img src={slide.img} alt="thumbnail" className="img-fluid rounded" />
-          </div>
-        ))}
-      </Slider>
+        <Slider {...settingsNav} className="slider-nav mt-4 pt-3">
+          {slides[activeSlide].map((slide, index) => (
+            <div key={index} className="px-2">
+              <img src={slide.img} alt="thumbnail" className="img-fluid rounded" />
+            </div>
+          ))}
+        </Slider>
       </div>
     </section>
   );
