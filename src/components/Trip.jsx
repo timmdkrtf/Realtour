@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import Slider from "react-slick";
-import { Modal, Button } from "react-bootstrap";
 import { CiGlobe } from "react-icons/ci";
 import trip1 from "../assets/img/trip/trip1.png";
 import trip2 from "../assets/img/trip/trip2.png";
@@ -26,7 +25,7 @@ function Trip() {
 
   const slides = [
     {
-      mainTitle: "Perjalanan 1 ",
+      mainTitle: "Wisata Jeep Bromo",
       img: trip1,
     },
     {
@@ -34,19 +33,19 @@ function Trip() {
       img: trip2,
     },
     {
-      mainTitle: "Perjalanan 3",
+      mainTitle: "Memahami Objek Sekitar",
       img: trip3,
     },
     {
-      mainTitle: "Perjalanan 4",
+      mainTitle: "Study Tour SMP Insan Kamil",
       img: trip4,
     },
     {
-      mainTitle: "Perjalanan 5",
+      mainTitle: "Wisata Mengelilingi Alam",
       img: trip5,
     },
     {
-      mainTitle: "Perjalanan 6",
+      mainTitle: "Wisata yang menyenangkan",
       img: trip6,
     },
   ];
@@ -92,11 +91,6 @@ function Trip() {
         },
       }
     ],
-  };
-
-  const handleOpenModal = (slide) => {
-    setModalData(slide);
-    setOpenModal(true);
   };
 
   return (
