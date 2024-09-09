@@ -13,8 +13,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Trip() {
-  const [openModal, setOpenModal] = useState(false);
-  const [modalData, setModalData] = useState({ title: "", description: "" });
   const sliderForRef = useRef(null);
   const sliderNavRef = useRef(null);
 
@@ -32,7 +30,7 @@ function Trip() {
       img: trip1,
     },
     {
-      mainTitle: "Perjalanan 2",
+      mainTitle: "Wisata dengan Lingkungan",
       img: trip2,
     },
     {

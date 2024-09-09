@@ -23,10 +23,45 @@
   opacity: 0.8;
 }
 
+.navbar .ms-auto .nav-link{
+  padding: 8px 10px;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+color: #274416;
+font-weight: 600;
+}
+
+.nav-link:focus:after,
+.nav-link:hover:after {
+width: 100%;
+left: 0%;
+}
+
+.nav-link:after {
+content: "";
+pointer-events: none;
+bottom: -2px;
+left: 50%;
+position: absolute;
+width: 0%;
+height: 2px;
+background-color: #274416;
+transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+transition-duration: 400ms;
+transition-property: width, left;
+}
+
 /* home */
 .home{
-  margin: 30px 0;
-  padding: 110px 0 130px 0;
+  margin: 0px 0;
+  padding: 140px 0 130px 0;
 }
 
 .home .content-flex{
@@ -69,12 +104,23 @@
   margin: 3px 0 0 0;
 }
 
+.home .content-text h3 .budaya{
+  display: inline-block;
+  position: relative; /* Ensure relative positioning for child pseudo-element */
+  color: white;
+  padding: 2px 7px;
+  background-color: #F56E12;
+  border-radius: 4px;
+  margin: 3px 0 0 0;
+}
+
 .home .content-text p{
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Noto Serif", sans-serif;
   font-weight: 400;
-  opacity: 0.9;
+  opacity: 0.8;
   margin-top: 18px;
+  width: 90%;
 }
 
 .home .content-text button{
@@ -88,6 +134,14 @@
   padding: 12px 20px;
   border-radius: 10px;
   box-shadow: 4px 4px 0px 0px rgba(245,110,18,0.75);
+  transition: 0.5s;
+}
+
+.home .content-text button:hover{
+  background-color: #FFFFFF;
+  color: #004AAD;
+  border: 1px solid #004AAD;
+  box-shadow: 1px 1px 0px 0px rgba(245,110,18,0.75);
 }
 
 .home .content-flex .content-img-grid{
@@ -95,7 +149,7 @@
   display: grid;
   right: 0;
   grid-template-columns: repeat(8, 11%);
-  grid-template-rows: repeat(12, 7%);
+  grid-template-rows: repeat(12, 6.5%);
   grid-column-gap: 15px;
   grid-row-gap: 15px;
   margin-top: -30px;
@@ -149,7 +203,7 @@
   position: relative;
   color: white;
   padding: 2px 7px;
-  background-color: #3FD486;
+  background-color: #F56E12;
   border-radius: 4px;
   margin: 3px 0 0 0;
 }
@@ -238,6 +292,16 @@
   padding: 20px 20px;
   text-align: center;
   box-shadow: 0 1px 4px #c4c4c4;
+  transition: 0.5s;
+}
+
+.service .card-content .card:hover{
+  box-shadow: 0 1px 4px #F56E12;
+  border: 1px solid #c4c4c4;
+}
+
+.service .card-content .card:hover img{
+  filter: drop-shadow(2px 2px 0px #3FD486);
 }
 
 .service .card-content .card img{

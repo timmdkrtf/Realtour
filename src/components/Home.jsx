@@ -1,5 +1,5 @@
-import bgPeople1 from '../assets/img/view/pexels-lucasallmann-442559.png'
-import bgPeople2 from '../assets/img/view/pexels-enjoyviibes-1232594 (1).png'
+import bgPeople1 from '../assets/img/view/29.png'
+import bgPeople2 from '../assets/img/view/30.png'
 import bgView1 from '../assets/img/view/26.png'
 import bgView2 from '../assets/img/view/28.png'
 
@@ -9,7 +9,7 @@ function Home(){
             <div className="container">
                 <div className="content-flex">
                     <div className="content-text">
-                        <h3>Menghadirkan <span className="wisata">Wisata</span> Berkesan dengan Sentuhan <span className="lingkungan">Lingkungan</span></h3>
+                        <h3>Menghadirkan <span className="wisata">Wisata</span> Berkesan dengan Sentuhan <span className="lingkungan">Lingkungan</span> & <span className="budaya">Budaya</span></h3>
                         <p>Realtour menawarkan pengalaman perjalanan yang seru dan memuaskan, sekaligus memberikan wawasan mendalam tentang lingkungan sekitar. Kami berkomitmen untuk menjadikan setiap perjalanan Anda unik dan penuh makna, dengan pendekatan yang memadukan kesenangan dan edukasi tentang keberlanjutan lingkungan hidup.</p>
                         <a href="#about" style={{textDecoration:"none"}}><button>Baca Selengkapnya</button></a>
                     </div>
