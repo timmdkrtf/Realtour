@@ -1,12 +1,24 @@
 import { useState, useRef, useEffect } from "react";
 import Slider from "react-slick";
 import { CiGlobe } from "react-icons/ci";
-import trip1 from "../assets/img/trip/trip1.png";
-import trip2 from "../assets/img/trip/trip2.png";
-import trip3 from "../assets/img/trip/trip3.png";
-import trip4 from "../assets/img/trip/trip4.png";
-import trip5 from "../assets/img/trip/trip5.png";
-import trip6 from "../assets/img/trip/trip6.png";
+import trip1 from "../assets/img/study-tour/trip1.png";
+import trip2 from "../assets/img/study-tour/trip2.png";
+import trip3 from "../assets/img/study-tour/trip3.png";
+import trip4 from "../assets/img/study-tour/trip4.png";
+import trip5 from "../assets/img/study-tour/trip5.png";
+import trip6 from "../assets/img/study-tour/trip6.png";
+
+import perTrip1 from "../assets/img/personal-trip/offering.png"
+import perTrip2 from "../assets/img/personal-trip/personal-guide.png"
+import perTrip3 from "../assets/img/personal-trip/personal-trip1.png"
+import perTrip4 from "../assets/img/personal-trip/personal-trip2.png"
+import perTrip5 from "../assets/img/personal-trip/resepsionis.png"
+
+import outing1 from "../assets/img/outing/introduction.png"
+import outing2 from "../assets/img/outing/outing-mountain.png"
+import outing3 from "../assets/img/outing/outing-night.png"
+import outing4 from "../assets/img/outing/outing-island.png"
+import outing5 from "../assets/img/outing/smile-together.png"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -61,54 +73,46 @@ function Trip() {
     ],
     'private-trip': [
       {
-        mainTitle: "Wisata Jeep Bromo",
-        img: trip1,
-      },
-      {
-        mainTitle: "Wisata dengan Lingkungan",
-        img: trip2,
+        mainTitle: "Dipandu dengan hati dan profesional",
+        img: perTrip1,
       },
       {
         mainTitle: "Memahami Objek Sekitar",
-        img: trip3,
+        img: perTrip2,
       },
       {
-        mainTitle: "Study Tour SMP Insan Kamil",
-        img: trip4,
+        mainTitle: "Nikmati Pengalaman liburanmu",
+        img: perTrip3,
       },
       {
-        mainTitle: "Wisata Mengelilingi Alam",
-        img: trip5,
+        mainTitle: "Tenangkan pikiranmu dengan wisata alam",
+        img: perTrip4,
       },
       {
-        mainTitle: "Wisata yang menyenangkan",
-        img: trip6,
+        mainTitle: "Diberikan Pelayanan terpercaya",
+        img: perTrip5,
       },
     ],
     'outing': [
       {
-        mainTitle: "Wisata Jeep Bromo",
-        img: trip1,
+        mainTitle: "Buat Wisata dengan rekan kerjamu",
+        img: outing1,
       },
       {
-        mainTitle: "Wisata dengan Lingkungan",
-        img: trip2,
+        mainTitle: "Tentramkan pikiranmu dari kepenatan kerja",
+        img: outing2,
       },
       {
-        mainTitle: "Memahami Objek Sekitar",
-        img: trip3,
+        mainTitle: "Buat Pengalamanmu lebih mengasyikkan",
+        img: outing3,
       },
       {
-        mainTitle: "Study Tour SMP Insan Kamil",
-        img: trip4,
+        mainTitle: "Abadikan pengalaman yang menyenangkan",
+        img: outing4,
       },
       {
-        mainTitle: "Wisata Mengelilingi Alam",
-        img: trip5,
-      },
-      {
-        mainTitle: "Wisata yang menyenangkan",
-        img: trip6,
+        mainTitle: "Lebih dekat dengan rekan kerjamu",
+        img: outing5,
       },
     ],
   };

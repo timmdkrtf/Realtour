@@ -443,7 +443,7 @@ transition-property: width, left;
 }
 
 .offer .content .popular-offer .card-offer .overlay .text-offer button:hover {
-  background-color: #e67e22; /* Darker shade for hover effect */
+  background-color: #e67e22;
 }
 
 .modal.show .modal-dialog{
@@ -461,7 +461,6 @@ transition-property: width, left;
   padding: 30px 40px;
 }
 
-
 .modal-body img{
   width: 100%;
   border-radius: 5px;
@@ -474,7 +473,7 @@ transition-property: width, left;
 }
 
 #portfolio h2.fw-bold{
-  font-family: "Poppins", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   align-self: center;
   display: inline-block;
   position: relative;
@@ -512,6 +511,7 @@ transition-property: width, left;
   display: flex;
   justify-content: center;
   gap: 20px;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .filter .button-filter button.active {
@@ -546,7 +546,7 @@ transition-property: width, left;
 .slider-for {
   width: 65%;
   margin: 0 auto;
-  position: relative; /* Ensure that slider container is relative for absolute positioning */
+  position: relative;
 }
 
 .slider-nav {
@@ -637,6 +637,7 @@ transition-property: width, left;
   width: 60%;
   margin-top: 80px !important;
   margin-bottom: 80px !important;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .realtour img{
@@ -1018,6 +1019,10 @@ footer > * {
     margin: 20px 0 0 0;
   }
 
+  .slider-for h4{
+    margin: -70px 0 0 0 !important;
+  }
+
   .partners{
     width: 90%;
   }
@@ -1130,6 +1135,7 @@ footer > * {
 
   .slider-for h4{
     font-size: 20px;
+    margin: -40px 0 0 0 !important;
   }
   
   .slider-for button{
@@ -1244,7 +1250,8 @@ footer > * {
   }
   
   .slider-for h4{
-    margin: -40px 0 0 0 !important;
+    margin: -50px 0 0 0 !important;
+    font-size: 18px;
   }
 
   .slider-for .text-white.position-absolute{
