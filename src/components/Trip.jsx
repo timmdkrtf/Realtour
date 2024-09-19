@@ -14,6 +14,7 @@ import perTrip2 from "../assets/img/personal-trip/personal-guide.png"
 import perTrip3 from "../assets/img/personal-trip/personal-trip1.png"
 import perTrip4 from "../assets/img/personal-trip/personal-trip2.png"
 import perTrip5 from "../assets/img/personal-trip/resepsionis.png"
+import perTrip6 from "../assets/img/personal-trip/MDK08609 (1).png"
 
 import outing1 from "../assets/img/outing/introduction.png"
 import outing2 from "../assets/img/outing/outing-mountain.png"
@@ -96,6 +97,10 @@ function Trip() {
       {
         mainTitle: "Diberikan Pelayanan terpercaya",
         img: perTrip5,
+      },
+      {
+        mainTitle: "Perjalanan private hanya dengan Temanmu",
+        img: perTrip6,
       },
     ],
     'outing': [
