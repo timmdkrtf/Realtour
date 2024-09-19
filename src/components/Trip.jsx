@@ -8,7 +8,7 @@ import trip4 from "../assets/img/study-tour/trip4.png";
 import trip5 from "../assets/img/study-tour/trip5.png";
 import trip6 from "../assets/img/study-tour/trip6.png";
 
-import perTrip1 from "../assets/img/personal-trip/offering.png"
+import perTrip1 from "../assets/img/personal-trip/offering (1).png"
 import perTrip2 from "../assets/img/personal-trip/personal-guide.png"
 import perTrip3 from "../assets/img/personal-trip/personal-trip1.png"
 import perTrip4 from "../assets/img/personal-trip/personal-trip2.png"
@@ -40,7 +40,7 @@ function Trip() {
 
   useEffect(() => {
     if (studyTourRef.current) {
-      studyTourRef.current.focus();
+      // studyTourRef.current.focus();
     }
   }, []);
 
