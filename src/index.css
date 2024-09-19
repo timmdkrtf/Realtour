@@ -34,7 +34,7 @@
 
 .nav-link:focus,
 .nav-link:hover {
-color: #274416;
+color: #004AAD;
 font-weight: 600;
 }
 
@@ -52,7 +52,7 @@ left: 50%;
 position: absolute;
 width: 0%;
 height: 2px;
-background-color: #274416;
+background-color: #004AAD;
 transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
 transition-duration: 400ms;
 transition-property: width, left;

@@ -7,6 +7,7 @@ import trip3 from "../assets/img/study-tour/trip3.png";
 import trip4 from "../assets/img/study-tour/trip4.png";
 import trip5 from "../assets/img/study-tour/trip5.png";
 import trip6 from "../assets/img/study-tour/trip6.png";
+import trip7 from "../assets/img/study-tour/Group 2 (3).png";
 
 import perTrip1 from "../assets/img/personal-trip/offering (1).png"
 import perTrip2 from "../assets/img/personal-trip/personal-guide.png"
@@ -16,9 +17,9 @@ import perTrip5 from "../assets/img/personal-trip/resepsionis.png"
 
 import outing1 from "../assets/img/outing/introduction.png"
 import outing2 from "../assets/img/outing/outing-mountain.png"
-import outing3 from "../assets/img/outing/outing-night.png"
-import outing4 from "../assets/img/outing/outing-island.png"
-import outing5 from "../assets/img/outing/smile-together.png"
+import outing3 from "../assets/img/outing/outline-island (2).png"
+import outing4 from "../assets/img/outing/outline-island (1).png"
+import outing5 from "../assets/img/outing/outline-island.png"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -70,6 +71,10 @@ function Trip() {
         mainTitle: "Wisata yang menyenangkan",
         img: trip6,
       },
+      {
+        mainTitle: "Perpaduan antara alam dan budaya",
+        img: trip7,
+      },
     ],
     'private-trip': [
       {
@@ -99,12 +104,12 @@ function Trip() {
         img: outing1,
       },
       {
-        mainTitle: "Tentramkan pikiranmu dari kepenatan kerja",
-        img: outing2,
-      },
-      {
         mainTitle: "Buat Pengalamanmu lebih mengasyikkan",
         img: outing3,
+      },
+      {
+        mainTitle: "Tentramkan pikiranmu dari kepenatan kerja",
+        img: outing2,
       },
       {
         mainTitle: "Abadikan pengalaman yang menyenangkan",
