@@ -787,6 +787,10 @@ footer > * {
   z-index: 2; /* Menempatkan konten footer di atas lapisan gelap */
 }
 
+footer .text-center p{
+  font-size: 14px;
+}
+
 
 @media screen and (max-width: 1200px) {
   .home .content-text h3{
@@ -1302,5 +1306,9 @@ footer > * {
   }
 .realtour img{
   margin-top: -3px !important;
+}
+
+footer .text-center p{
+  font-size: 11px;
 }
 }

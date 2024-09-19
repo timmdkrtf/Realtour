@@ -9,7 +9,7 @@ import habatour from "../assets/img/icon-clients/habatour.png";
 import halakah from "../assets/img/icon-clients/halakah.png";
 import kronika from "../assets/img/icon-clients/kronika.png";
 import nyamanin from "../assets/img/icon-clients/nyamanin.png";
-import realtour from "../assets/img/icon-clients/realtour.png";
+// import realtour from "../assets/img/icon-clients/realtour.png";
 import AYP from "../assets/img/icon-clients/1. AYP Logo Primary (P).png";
 import TMC from "../assets/img/icon-clients/1. TMC Logo Primary (P).png";
 import TMF from "../assets/img/icon-clients/1. TMF Logo Primary (P).png";
@@ -97,7 +97,7 @@ const Client = () => {
                 <SwiperSlide className="halakah"><img src={halakah} alt="halakah" /></SwiperSlide>
                 <SwiperSlide className="kronika"><img src={kronika} alt="kronika" /></SwiperSlide>
                 <SwiperSlide className="nyamanin"><img src={nyamanin} alt="nyamanin" /></SwiperSlide>
-                <SwiperSlide className="realtour"><img src={realtour} alt="realtour" /></SwiperSlide>
+                {/* <SwiperSlide className="realtour"><img src={realtour} alt="realtour" /></SwiperSlide> */}
                 <SwiperSlide className="AYP"><img src={AYP} alt="AYP" /></SwiperSlide>
                 <SwiperSlide className="TMC"><img src={TMC} alt="TMC" /></SwiperSlide>
                 <SwiperSlide className="TMF"><img src={TMF} alt="TMF" /></SwiperSlide>
