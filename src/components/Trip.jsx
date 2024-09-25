@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import Slider from "react-slick";
-import { CiGlobe } from "react-icons/ci";
 import trip1 from "../assets/img/study-tour/trip1.png";
 import trip2 from "../assets/img/study-tour/trip2.png";
 import trip3 from "../assets/img/study-tour/trip3.png";
@@ -9,14 +8,14 @@ import trip5 from "../assets/img/study-tour/trip5.png";
 import trip6 from "../assets/img/study-tour/trip6.png";
 import trip7 from "../assets/img/study-tour/Group 2 (3).png";
 
-import perTrip1 from "../assets/img/personal-trip/offering (1).png"
+import perTrip1 from "../assets/img/personal-trip/guide1.png"
 import perTrip2 from "../assets/img/personal-trip/personal-guide.png"
 import perTrip3 from "../assets/img/personal-trip/personal-trip1.png"
 import perTrip4 from "../assets/img/personal-trip/personal-trip2.png"
-import perTrip5 from "../assets/img/personal-trip/resepsionis.png"
+import perTrip5 from "../assets/img/personal-trip/guide2.png"
 import perTrip6 from "../assets/img/personal-trip/MDK08609 (1).png"
 
-import outing1 from "../assets/img/outing/introduction.png"
+import outing1 from "../assets/img/outing/default-cover.png"
 import outing2 from "../assets/img/outing/outing-mountain.png"
 import outing3 from "../assets/img/outing/outline-island (2).png"
 import outing4 from "../assets/img/outing/outline-island (1).png"
@@ -49,6 +48,10 @@ function Trip() {
   const slides = {
     'study-tour': [
       {
+        mainTitle: "Study Tour SMP Insan Kamil",
+        img: trip4,
+      },
+      {
         mainTitle: "Wisata Jeep Bromo",
         img: trip1,
       },
@@ -59,10 +62,6 @@ function Trip() {
       {
         mainTitle: "Memahami Objek Sekitar",
         img: trip3,
-      },
-      {
-        mainTitle: "Study Tour SMP Insan Kamil",
-        img: trip4,
       },
       {
         mainTitle: "Wisata Mengelilingi Alam",
@@ -79,8 +78,8 @@ function Trip() {
     ],
     'private-trip': [
       {
-        mainTitle: "Dipandu dengan hati dan profesional",
-        img: perTrip1,
+        mainTitle: "Perjalanan private hanya dengan Temanmu",
+        img: perTrip6,
       },
       {
         mainTitle: "Memahami Objek Sekitar",
@@ -91,16 +90,16 @@ function Trip() {
         img: perTrip3,
       },
       {
+        mainTitle: "Dipandu dengan hati dan profesional",
+        img: perTrip1,
+      },
+      {
         mainTitle: "Tenangkan pikiranmu dengan wisata alam",
         img: perTrip4,
       },
       {
         mainTitle: "Diberikan Pelayanan terpercaya",
         img: perTrip5,
-      },
-      {
-        mainTitle: "Perjalanan private hanya dengan Temanmu",
-        img: perTrip6,
       },
     ],
     'outing': [
@@ -220,7 +219,6 @@ function Trip() {
           {slides[activeSlide].map((slide, index) => (
             <div key={index} className="image-wrapper position-relative">
               <img src={slide.img} alt="slide" className="img-fluid rounded w-100" />
-              <CiGlobe className="position-absolute top-0 start-0 m-4 bg-white p-2 rounded-circle" size={48} />
               <div className="text-white position-absolute">
                 <h4 style={{margin:"-40px 0 0 0"}}>{slide.mainTitle}</h4>
               </div>
