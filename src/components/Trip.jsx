@@ -48,7 +48,7 @@ function Trip() {
   const slides = {
     'study-tour': [
       {
-        mainTitle: "Study Tour SMP Insan Kamil",
+        mainTitle: "Study Tour SMP & SMA Insan Kamil",
         img: trip4,
       },
       {
@@ -78,6 +78,10 @@ function Trip() {
     ],
     'private-trip': [
       {
+        mainTitle: "Diberikan Pelayanan terpercaya",
+        img: perTrip5,
+      },
+      {
         mainTitle: "Perjalanan private hanya dengan Temanmu",
         img: perTrip6,
       },
@@ -96,10 +100,6 @@ function Trip() {
       {
         mainTitle: "Tenangkan pikiranmu dengan wisata alam",
         img: perTrip4,
-      },
-      {
-        mainTitle: "Diberikan Pelayanan terpercaya",
-        img: perTrip5,
       },
     ],
     'outing': [

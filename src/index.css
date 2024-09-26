@@ -503,6 +503,13 @@ transition-property: width, left;
   color: white;
 }
 
+#portfolio a button:hover{
+  box-shadow: 0 4px 0px 0px #3FD486;
+  border: 1px solid #004AAD;
+  color: #004AAD;
+  background-color: #FFFFFF;
+}
+
 .filter {
   margin: 0 0 20px 0;
 }
