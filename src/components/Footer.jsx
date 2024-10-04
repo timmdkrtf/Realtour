@@ -11,7 +11,7 @@ const Footer = () => {
         <Row className="justify-content-between align-items-center">
           <Col md={6} className="py-4">
             <img src={logoRealtour} className="w-25" alt="Realtour Logo" /><br />
-            <small style={{opacity:"0.7", fontSize:"11px", fontFamily:"Be Vietnam Pro, sans-serif"}}>by PT Abdi Sarana Wisata</small>
+            <small style={{opacity:"0.7", fontSize:"11px", fontFamily:"Be Vietnam Pro, sans-serif"}}>by PT Abdi Solusi Wisata</small>
             <div className="mt-3 opacity-75">
               <div className="mb-2">
                 Jl. Aria Surialaga No.83, Kota Bogor
