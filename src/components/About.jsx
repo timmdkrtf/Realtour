@@ -1,4 +1,5 @@
-import logoRealtour from '../assets/img/icon-clients/realtour.png'
+import logoRealtourPrimary from '../assets/img/icon-clients/realtour.png'
+import logoRealtourSecondary from '../assets/img/icon-clients/2. Realtour Logo Utama (N).png'
 
 function About(){
     return(
@@ -7,7 +8,8 @@ function About(){
             <div className="container">
                 <div className="content-flex">
                     <div className="logo">
-                        <img src={logoRealtour} alt="" />
+                        <img src={logoRealtourPrimary} className='primary' alt="Logo Realtour" />
+                        <img src={logoRealtourSecondary} className='secondary' alt="Logo Realtour" />
                     </div>
                     <div className="text-left">
                         <div className="title">

@@ -2,7 +2,6 @@ body{
   overflow-x: hidden;
 }
 
-/* navbar */
 .navbar{
   padding: 15px;
 }
@@ -63,20 +62,6 @@ transition-property: width, left;
   margin: 0px 0;
   padding: 140px 0 130px 0;
   position: relative;
-}
-
-.home::after{
-  content: "";
-  position: absolute;
-  background-image: url('../src/assets/img/main-gelombang2.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: -1;
-  top: 37%;
-  right: 0;
-  width: 49%;
-  height: 400px;
-  opacity: 0.6;
 }
 
 .home .content-flex{
@@ -171,6 +156,33 @@ transition-property: width, left;
   position: relative;
 }
 
+.home .content-flex .content-img-grid::after{
+  position: absolute;
+  content: "";
+  background-image: url('../src/assets/img/wind-orange.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+  z-index: -1;
+  left: -50px;
+  bottom: -130px;
+  transform: rotate(17deg);
+}
+
+.home .content-flex .content-img-grid::before{
+  position: absolute;
+  content: "";
+  background-image: url('../src/assets/img/wind-blue.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+  z-index: -1;
+  right: 30px;
+  top: 20px;
+}
+
 .home .content-img-grid img{
   width: 100%;
   height: 100%;
@@ -188,20 +200,7 @@ transition-property: width, left;
 
 .img.bottom { 
   grid-area: 6 / 1 / 11 / 5;
-  /* position: relative; */
 }
-
-/* .img.bottom::before{
-  content: "";
-  position: absolute;
-  background-image: url('../src/assets/img/line-img.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 70px;
-  height: 70px;
-  bottom: -40px;
-  left: -30px;
-} */
 
 .img.left { 
   grid-area: 8 / 5 / 13 / 8;
@@ -283,7 +282,6 @@ transition-property: width, left;
   font-family: "Noto Serif", sans-serif;
   margin-top: 10px;
   font-size: 15px;
-  /* text-shadow: 0 0 5px black; */
   font-weight: 400;
 }
 
@@ -292,6 +290,10 @@ transition-property: width, left;
 }
 .about .content-flex .logo img{
   width: 100%;
+}
+
+.about .content-flex .logo .secondary{
+  display: none;
 }
 
 .service{
@@ -900,6 +902,33 @@ footer .text-center p{
     font-size: 14px;
   }
 
+  .home .content-flex .content-img-grid::after{
+    position: absolute;
+    content: "";
+    background-image: url('../src/assets/img/wind-orange.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 130px;
+    height: 130px;
+    z-index: -1;
+    left: 0;
+    bottom: -70px;
+    transform: rotate(17deg);
+  }
+  
+  .home .content-flex .content-img-grid::before{
+    position: absolute;
+    content: "";
+    background-image: url('../src/assets/img/wind-blue.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 130px;
+    height: 130px;
+    z-index: -1;
+    right: 30px;
+    top: 15px;
+  }
+
   .about .content-flex .text-left{
     width: 50%;
   }
@@ -986,31 +1015,31 @@ footer .text-center p{
     margin: 6px 0 0 0;
   }
 
-  .home::after{
-    content: "";
-    position: absolute;
-    background-image: url('../src/assets/img/main-gelombang.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: -1;
-    top: 55%;
-    right: 0;
-    width: 100%;
-    height: 320px;
-  }
-
   .about{
     margin: 40px 0;
-    padding: 70px 0 70px 0;
+    padding: 90px 0 70px 0;
+    position: relative;
+  }
+
+  .about .content-flex{
+    flex-direction: column;
   }
 
   .about .content-flex .text-left{
     width: 100%;
   }
 
-  .about .content-flex .logo{
+  .about .content-flex .logo .primary{
     width: 300px;
     display: none;
+  }
+
+  .about .content-flex .logo .secondary{
+    width: 100px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
   }
 
   .about::after{
@@ -1097,19 +1126,6 @@ footer .text-center p{
     margin-top: 70px;
     grid-template-columns: repeat(8, 51px);
     grid-template-rows: repeat(12, 25px);
-  }
-
-  .home::after{
-    content: "";
-    position: absolute;
-    background-image: url('../src/assets/img/main-gelombang.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: -1;
-    top: 65%;
-    right: 0;
-    width: 100%;
-    height: 320px;
   }
 
   .about{
@@ -1256,26 +1272,44 @@ footer .text-center p{
     grid-row-gap: 10px;
   }
 
-  .home::after{
-    content: "";
-    position: absolute;
-    background-image: url('../src/assets/img/main-gelombang2.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: -1;
-    top: 67%;
-    right: 0;
-    width: 100%;
-    height: 280px;
-  }
-
   .home .content-text p{
     font-size: 14px;
     opacity: 0.8;
   }
 
+  .home .content-flex .content-img-grid::after{
+    position: absolute;
+    content: "";
+    background-image: url('../src/assets/img/wind-orange.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 110px;
+    height: 110px;
+    z-index: -1;
+    left: 0;
+    bottom: -125px;
+    transform: rotate(17deg);
+  }
+  
+  .home .content-flex .content-img-grid::before{
+    position: absolute;
+    content: "";
+    background-image: url('../src/assets/img/wind-blue.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 110px;
+    height: 110px;
+    z-index: -1;
+    right: 30px;
+    top: 15px;
+  }
+
   .about .content-flex .text-left p{
     font-size: 14px;
+  }
+
+  .about .content-flex .logo .secondary{
+    width: 80px;
   }
 
   .service .card-content{
@@ -1441,18 +1475,32 @@ footer .text-center p{
     grid-column-gap: 10px;
     grid-row-gap: 10px;
   }
-  
-  .home::after{
-    content: "";
+
+  .home .content-flex .content-img-grid::after{
     position: absolute;
-    background-image: url('../src/assets/img/main-gelombang2.png');
-    background-size: contain;
+    content: "";
+    background-image: url('../src/assets/img/wind-orange.png');
     background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
     z-index: -1;
-    top: 72%;
-    right: 0;
-    width: 100%;
-    height: 280px;
+    left: 0;
+    bottom: -125px;
+    transform: rotate(17deg);
+  }
+  
+  .home .content-flex .content-img-grid::before{
+    position: absolute;
+    content: "";
+    background-image: url('../src/assets/img/wind-blue.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    z-index: -1;
+    right: 10px;
+    top: 15px;
   }
 
   .about .content-flex .text-left p{
