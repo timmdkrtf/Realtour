@@ -2,7 +2,8 @@ import logoRealtour from '../assets/img/icon-clients/realtour.png'
 
 function About(){
     return(
-        <div className="about" id="about">
+        <div id="about" style={{padding:"40px 0 0 0"}}>
+        <div className="about">
             <div className="container">
                 <div className="content-flex">
                     <div className="logo">
@@ -18,7 +19,8 @@ function About(){
                 </div>
             </div>
         </div>
+        </div>
     );
 }
 
-export default About;   
+export default About;
