@@ -1259,7 +1259,7 @@ footer .text-center p{
   .home::after{
     content: "";
     position: absolute;
-    background-image: url('../src/assets/img/main-gelombang.png');
+    background-image: url('../src/assets/img/main-gelombang2.png');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
@@ -1445,7 +1445,7 @@ footer .text-center p{
   .home::after{
     content: "";
     position: absolute;
-    background-image: url('../src/assets/img/main-gelombang.png');
+    background-image: url('../src/assets/img/main-gelombang2.png');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
