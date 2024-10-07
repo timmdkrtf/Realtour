@@ -2,6 +2,8 @@ import FlyerTravel from "../assets/img/flyer/3.png"
 import FlyerTrave2 from "../assets/img/flyer/2.png"
 import FlyerTrave3 from "../assets/img/flyer/1 (1).png"
 
+import WaveLeft from "../assets/img/gelombang-left.png"
+
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -58,6 +60,9 @@ function Offer(){
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="icon-wave">
+                <img src={WaveLeft} alt="" />
             </div>
         </div>
         </>
