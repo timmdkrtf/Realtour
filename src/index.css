@@ -216,7 +216,7 @@ transition-property: width, left;
 .about::after{
   content: "";
   position: absolute;
-  background-image: url('../src/assets/img/view/24.webp');
+  background-image: url('../src/assets/img/view/24.png');
   background-size: cover;
   filter: brightness(50%);
   width: 49%;
