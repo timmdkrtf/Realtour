@@ -216,7 +216,7 @@ transition-property: width, left;
 .about::after{
   content: "";
   position: absolute;
-  background-image: url('../src/assets/img/view/24.png');
+  background-image: url('../src/assets/img/view/24.webp');
   background-size: cover;
   filter: brightness(50%);
   width: 49%;
@@ -308,7 +308,7 @@ transition-property: width, left;
                                     rgba(0, 0, 0, 0.4) 0%, 
                                     rgba(255, 255, 255, 0) 50%, 
                                     rgba(0, 0, 0, 0.9) 100%), 
-                    url('/src/assets/img/view/21.png');
+                    url('/src/assets/img/view/21.webp');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;

@@ -1,7 +1,7 @@
-import bgPeople1 from '../assets/img/view/29.png'
-import bgPeople2 from '../assets/img/view/30.png'
-import bgView1 from '../assets/img/view/26.png'
-import bgView2 from '../assets/img/view/28.png'
+import bgPeople1 from '../assets/img/view/29.webp'
+import bgPeople2 from '../assets/img/view/30.webp'
+import bgView1 from '../assets/img/view/26.webp'
+import bgView2 from '../assets/img/view/28.webp'
 
 function Home(){
     return(
