@@ -445,6 +445,7 @@ transition-property: width, left;
   border-radius: 10px;
   display: inline-block;
   overflow: hidden;
+  position: relative;
  }
 
  .offer .content .popular-offer .card-offer .image-container {
@@ -452,6 +453,22 @@ transition-property: width, left;
   width: 32% !important;
   overflow: hidden;
   border-radius: 10px;
+}
+
+.offer .content .popular-offer .card-offer .image-container::after{
+  content: "Coming Soon";
+  color: #ffffff;
+  font-family: "Be Vietnam Pro", sans-serif;
+  text-shadow: 0 0 4px #F56E12;
+  font-size: 32px;
+  padding: 200px 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: brightness(40%);
+  opacity: 1;
+  top: 0;
+  left: 0;
 }
 
 .offer .content .popular-offer .card-offer .image-container img {
