@@ -89,10 +89,12 @@ transition-property: width, left;
   content: "";
   position: absolute;
   width: 100%;
-  height: 5px;
-  background-color: #F56E12;
+  height: 10px;
+  background-image: url('../src/assets/img/line-wave.png');
+  background-size: contain;
+  background-repeat: no-repeat;
   border-radius: 20px;
-  bottom: 0;
+  bottom: -5px;
 }
 .home .content-text h3 .lingkungan {
   display: inline-block;
@@ -1320,6 +1322,10 @@ footer .text-center p{
     z-index: -1;
     right: 30px;
     top: 15px;
+  }
+
+  .home .content-text h3 .wisata::before{
+    bottom: -7px;
   }
 
   .about .content-flex .text-left p{
