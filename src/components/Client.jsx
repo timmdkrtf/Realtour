@@ -9,7 +9,6 @@ import habatour from "../assets/img/icon-clients/habatour.png";
 import halakah from "../assets/img/icon-clients/halakah.png";
 import kronika from "../assets/img/icon-clients/kronika.png";
 import nyamanin from "../assets/img/icon-clients/nyamanin.png";
-// import realtour from "../assets/img/icon-clients/realtour.png";
 import AYP from "../assets/img/icon-clients/1. AYP Logo Primary (P).png";
 import TMC from "../assets/img/icon-clients/1. TMC Logo Primary (P).png";
 import TMF from "../assets/img/icon-clients/1. TMF Logo Primary (P).png";
@@ -52,7 +51,7 @@ const Client = () => {
     return (
         <>
         <section className="partners max-w-2xl mx-auto py-5 my-5">
-            <h1 className="font-Leaguespartan text-3xl text-center font-bold">Klien Kami</h1>
+            <h2 className="text-3xl text-center font-bold">Klien <span>Kami</span></h2>
             <Swiper
                 loop={true}
                 freeMode={true}
