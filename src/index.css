@@ -22,7 +22,7 @@ body{
   opacity: 0.8;
 }
 
-.bg-body-tertiary .ms-auto .nav-link{
+ .ms-auto .nav-link{
   padding: 8px 10px;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
@@ -31,19 +31,19 @@ body{
   position: relative;
 }
 
-.bg-body-tertiary .nav-link:focus,
+ .nav-link:focus,
 .nav-link:hover {
 color: #004AAD;
 font-weight: 600;
 }
 
-.bg-body-tertiary .nav-link:focus:after,
+ .nav-link:focus:after,
 .nav-link:hover:after {
 width: 100%;
 left: 0%;
 }
 
-.bg-body-tertiary .nav-link:after {
+ .nav-link:after {
 content: "";
 pointer-events: none;
 bottom: -2px;
