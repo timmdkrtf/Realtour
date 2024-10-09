@@ -22,7 +22,7 @@ body{
   opacity: 0.8;
 }
 
-.navbar .ms-auto .nav-link{
+.bg-body-tertiary .ms-auto .nav-link{
   padding: 8px 10px;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
