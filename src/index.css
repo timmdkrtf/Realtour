@@ -31,19 +31,19 @@ body{
   position: relative;
 }
 
-.navbar .nav-link:focus,
+.bg-body-tertiary .nav-link:focus,
 .nav-link:hover {
 color: #004AAD;
 font-weight: 600;
 }
 
-.navbar .nav-link:focus:after,
+.bg-body-tertiary .nav-link:focus:after,
 .nav-link:hover:after {
 width: 100%;
 left: 0%;
 }
 
-.navbar .nav-link:after {
+.bg-body-tertiary .nav-link:after {
 content: "";
 pointer-events: none;
 bottom: -2px;
