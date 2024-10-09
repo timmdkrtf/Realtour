@@ -1,5 +1,5 @@
 import { FaMapMarked} from "react-icons/fa";
-import { FaSquareInstagram } from "react-icons/fa6";
+import { BsInstagram } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import logoRealtour from "../assets/img/icon-clients/2. Realtour Logo Utama (N).png";
 import { Container, Row, Col, Nav } from "react-bootstrap";
@@ -21,7 +21,7 @@ const Footer = () => {
                 <a href="" className="text-white text-decoration-none">+62 812 1377 9357</a>
               </div>
               <div className="d-flex align-items-center">
-                <FaSquareInstagram className="me-2" />
+                <BsInstagram className="me-2" />
                 <a href="https://instagram.com/realtour.co.id" target="_blank" className="text-white text-decoration-none">realtour.co.id</a>
               </div>
             </div>
@@ -32,7 +32,7 @@ const Footer = () => {
                 <FaMapMarked />
               </Nav.Link>
               <Nav.Link target="_blank" href="https://instagram.com/realtour.co.id" className="text-white fs-3 me-1">
-                <FaSquareInstagram />
+                <BsInstagram />
               </Nav.Link>
               <Nav.Link target="_blank" href="https://api.whatsapp.com/send?phone=6281213779357" className="text-white fs-3">
                 <IoLogoWhatsapp />
