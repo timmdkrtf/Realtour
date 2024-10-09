@@ -1,25 +1,25 @@
 import { useState, useRef, useEffect } from "react";
 import Slider from "react-slick";
-import trip1 from "../assets/img/study-tour/trip1.png";
-import trip2 from "../assets/img/study-tour/trip2.png";
-import trip3 from "../assets/img/study-tour/trip3.png";
-import trip4 from "../assets/img/study-tour/trip4.png";
-import trip5 from "../assets/img/study-tour/trip5.png";
-import trip6 from "../assets/img/study-tour/trip6.png";
-import trip7 from "../assets/img/study-tour/Group 2 (3).png";
+import trip1 from "../assets/img/study-tour/trip1.webp";
+import trip2 from "../assets/img/study-tour/trip2.webp";
+import trip3 from "../assets/img/study-tour/trip3.webp";
+import trip4 from "../assets/img/study-tour/trip4.webp";
+import trip5 from "../assets/img/study-tour/trip5.webp";
+import trip6 from "../assets/img/study-tour/trip6.webp";
+import trip7 from "../assets/img/study-tour/Group 2 (3).webp";
 
-import perTrip1 from "../assets/img/personal-trip/guide1.png"
-import perTrip2 from "../assets/img/personal-trip/personal-guide.png"
-import perTrip3 from "../assets/img/personal-trip/personal-trip1.png"
-import perTrip4 from "../assets/img/personal-trip/personal-trip2.png"
-import perTrip5 from "../assets/img/personal-trip/guide2.png"
-import perTrip6 from "../assets/img/personal-trip/MDK08609 (1).png"
+import perTrip1 from "../assets/img/personal-trip/guide1.webp"
+import perTrip2 from "../assets/img/personal-trip/personal-guide.webp"
+import perTrip3 from "../assets/img/personal-trip/personal-trip1.webp"
+import perTrip4 from "../assets/img/personal-trip/personal-trip2.webp"
+import perTrip5 from "../assets/img/personal-trip/guide2.webp"
+import perTrip6 from "../assets/img/personal-trip/MDK08609 (1).webp"
 
-import outing1 from "../assets/img/outing/default-cover.png"
-import outing2 from "../assets/img/outing/outing-mountain.png"
-import outing3 from "../assets/img/outing/outline-island (2).png"
-import outing4 from "../assets/img/outing/outline-island (1).png"
-import outing5 from "../assets/img/outing/outline-island.png"
+import outing1 from "../assets/img/outing/default-cover.webp"
+import outing2 from "../assets/img/outing/outing-mountain.webp"
+import outing3 from "../assets/img/outing/outline-island (2).webp"
+import outing4 from "../assets/img/outing/outline-island (1).webp"
+import outing5 from "../assets/img/outing/outline-island.webp"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
