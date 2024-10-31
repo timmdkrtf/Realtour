@@ -12,6 +12,9 @@ import nyamanin from "../assets/img/icon-clients/nyamanin.png";
 import AYP from "../assets/img/icon-clients/1. AYP Logo Primary (P).png";
 import TMC from "../assets/img/icon-clients/1. TMC Logo Primary (P).png";
 import TMF from "../assets/img/icon-clients/1. TMF Logo Primary (P).png";
+import HYS from "../assets/img/icon-clients/logo-heppy-yoga-studio.png";
+import BBS from "../assets/img/icon-clients/logo BBS.png";
+import InKa from "../assets/img/icon-clients/logo-insan-kamil.png";
 
 import waveRight from "../assets/img/gelombang-right.png"
 
@@ -96,10 +99,12 @@ const Client = () => {
                 <SwiperSlide className="halakah"><img src={halakah} alt="halakah" /></SwiperSlide>
                 <SwiperSlide className="kronika"><img src={kronika} alt="kronika" /></SwiperSlide>
                 <SwiperSlide className="nyamanin"><img src={nyamanin} alt="nyamanin" /></SwiperSlide>
-                {/* <SwiperSlide className="realtour"><img src={realtour} alt="realtour" /></SwiperSlide> */}
-                <SwiperSlide className="AYP"><img src={AYP} alt="AYP" /></SwiperSlide>
-                <SwiperSlide className="TMC"><img src={TMC} alt="TMC" /></SwiperSlide>
-                <SwiperSlide className="TMF"><img src={TMF} alt="TMF" /></SwiperSlide>
+                <SwiperSlide className="AYP"><img src={AYP} alt="Arsjad Yusuf and Partners" /></SwiperSlide>
+                <SwiperSlide className="HYS"><img src={HYS} alt="Heppy Yoga Studio" /></SwiperSlide>
+                <SwiperSlide className="BBS"><img src={BBS} alt="Bina Bangsa Sejahtera" /></SwiperSlide>
+                <SwiperSlide className="TMC"><img src={TMC} alt="Thamrin Meyer Corporation" /></SwiperSlide>
+                <SwiperSlide className="InKa"><img src={InKa} alt="Insan Kamil" /></SwiperSlide>
+                <SwiperSlide className="TMF"><img src={TMF} alt="Thamrin Meyer Foundation" /></SwiperSlide>
             </Swiper>
         </section>
         <div className='wave-right-client'>

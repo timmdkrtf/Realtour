@@ -799,7 +799,7 @@ transition-property: width, left;
   margin-top: -9px;
 }
 
-.apostrof img, .halakah img{
+.apostrof img, .halakah img, .HYS img, .BBS img, .InKa img{
   width: 180px;
   height: 150px;
   object-fit: contain;
