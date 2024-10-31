@@ -13,7 +13,7 @@ import AYP from "../assets/img/icon-clients/1. AYP Logo Primary (P).png";
 import TMC from "../assets/img/icon-clients/1. TMC Logo Primary (P).png";
 import TMF from "../assets/img/icon-clients/1. TMF Logo Primary (P).png";
 import HYS from "../assets/img/icon-clients/logo-heppy-yoga-studio.png";
-import BBS from "../assets/img/icon-clients/logo BBS.png";
+import BBS from "../assets/img/icon-clients/Logo BBS.png";
 import InKa from "../assets/img/icon-clients/logo-insan-kamil.png";
 
 import waveRight from "../assets/img/gelombang-right.png"
