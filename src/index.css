@@ -799,10 +799,17 @@ transition-property: width, left;
   margin-top: -9px;
 }
 
-.apostrof img, .halakah img, .HYS img, .BBS img, .InKa img{
+.apostrof img, .halakah img, .BBS img, .InKa img{
   width: 180px;
   height: 150px;
   object-fit: contain;
+}
+
+.HYS img{
+  width: 180px;
+  height: 150px;
+  object-fit: contain;
+  filter: drop-shadow(1px 1px 0 #afafaf);
 }
 
 .slider-for button{
