@@ -15,6 +15,8 @@ import TMF from "../assets/img/icon-clients/1. TMF Logo Primary (P).png";
 import HYS from "../assets/img/icon-clients/logo-heppy-yoga-studio.png";
 import BBS from "../assets/img/icon-clients/Logo BBS.png";
 import InKa from "../assets/img/icon-clients/logo-insan-kamil.png";
+import mdkrtf from "../assets/img/icon-clients/mdkrtf.png"
+import Majlis from "../assets/img/icon-clients/Logo 2.png"
 
 import waveRight from "../assets/img/gelombang-right.png"
 
@@ -105,6 +107,8 @@ const Client = () => {
                 <SwiperSlide className="TMC"><img src={TMC} alt="Thamrin Meyer Corporation" /></SwiperSlide>
                 <SwiperSlide className="InKa"><img src={InKa} alt="Insan Kamil" /></SwiperSlide>
                 <SwiperSlide className="TMF"><img src={TMF} alt="Thamrin Meyer Foundation" /></SwiperSlide>
+                <SwiperSlide className="kronika"><img src={mdkrtf} alt="mdkrtf" /></SwiperSlide>
+                <SwiperSlide className="InKa"><img src={Majlis} alt="Majlis" /></SwiperSlide>
             </Swiper>
         </section>
         <div className='wave-right-client'>
