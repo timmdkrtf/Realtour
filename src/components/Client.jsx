@@ -17,6 +17,8 @@ import BBS from "../assets/img/icon-clients/Logo BBS.png";
 import InKa from "../assets/img/icon-clients/logo-insan-kamil.png";
 import mdkrtf from "../assets/img/icon-clients/mdkrtf.png"
 import Majlis from "../assets/img/icon-clients/Logo 2.png"
+import aka from "../assets/img/icon-clients/AKA.png"
+import ask from "../assets/img/icon-clients/ASK.png"
 
 import waveRight from "../assets/img/gelombang-right.png"
 
@@ -96,6 +98,7 @@ const Client = () => {
                   }}
                 className='items-center justify-center'>
                 <SwiperSlide className="apostrof"><img src={apostrof} alt="apostrof" /></SwiperSlide>
+                <SwiperSlide className="ask"><img src={ask} alt="ask" /></SwiperSlide>
                 <SwiperSlide className="bahana"><img src={bahama} alt="bahana" /></SwiperSlide>
                 <SwiperSlide className="habatour"><img src={habatour} alt="habatour" /></SwiperSlide>
                 <SwiperSlide className="halakah"><img src={halakah} alt="halakah" /></SwiperSlide>
@@ -109,6 +112,7 @@ const Client = () => {
                 <SwiperSlide className="TMF"><img src={TMF} alt="Thamrin Meyer Foundation" /></SwiperSlide>
                 <SwiperSlide className="kronika"><img src={mdkrtf} alt="mdkrtf" /></SwiperSlide>
                 <SwiperSlide className="InKa"><img src={Majlis} alt="Majlis" /></SwiperSlide>
+                <SwiperSlide className="aka"><img src={aka} alt="aka" /></SwiperSlide>
             </Swiper>
         </section>
         <div className='wave-right-client'>

@@ -812,6 +812,14 @@ transition-property: width, left;
   filter: drop-shadow(1px 1px 0 #afafaf);
 }
 
+.aka img,
+.ask img {
+  width: 160px;
+  height: 140px;
+  object-fit: contain;
+  margin-top: 20px;
+}
+
 .slider-for button{
   padding: 10px 28px;
   border-radius: 30px;
@@ -1031,6 +1039,14 @@ footer .text-center p{
 
   .bahana{
     margin-top: 8px;
+  }
+
+  .aka img,
+  .ask img {
+    width: 160px;
+    height: 140px;
+    object-fit: contain;
+    margin-top: 7px;
   }
 }
 
@@ -1496,6 +1512,12 @@ footer .text-center p{
 
 .nyamanin img{
   margin-top: -0px;
+}
+
+.aka img,
+.ask img {
+  object-fit: contain;
+  margin-top: 7px;
 }
 }
 
