@@ -35,9 +35,9 @@ const Footer = () => {
           </Col>
           <Col md={6} className="text-center text-md-end opacity-75">
             <Nav className="justify-content-center justify-content-md-end mb-3">
-              <Nav.Link href="" className="text-white fs-3 me-1">
+              {/* <Nav.Link href="" className="text-white fs-3 me-1">
                 <FaFacebook />
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link href="https://www.tiktok.com/@realtour.co.id" className="text-white fs-3 me-1">
                 <FaTiktok />
               </Nav.Link>
