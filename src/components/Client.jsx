@@ -4,7 +4,7 @@ import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
 
 import apostrof from "../assets/img/icon-clients/apostrof.png";
-import bahama from "../assets/img/icon-clients/bahama.png";
+import bahana from "../assets/img/icon-clients/bahama.png";
 import habatour from "../assets/img/icon-clients/habatour.png";
 import halakah from "../assets/img/icon-clients/halakah.png";
 import kronika from "../assets/img/icon-clients/kronika.png";
@@ -19,6 +19,7 @@ import mdkrtf from "../assets/img/icon-clients/mdkrtf.png"
 import Majlis from "../assets/img/icon-clients/Logo 2.png"
 import aka from "../assets/img/icon-clients/AKA.png"
 import ask from "../assets/img/icon-clients/ASK.png"
+import RihlahTK from "../assets/img/icon-clients/Design Baju Rihlah TK Inka 2025.png"
 
 import waveRight from "../assets/img/gelombang-right.png"
 
@@ -99,8 +100,9 @@ const Client = () => {
                 className='items-center justify-center'>
                 <SwiperSlide className="apostrof"><img src={apostrof} alt="apostrof" /></SwiperSlide>
                 <SwiperSlide className="ask"><img src={ask} alt="ask" /></SwiperSlide>
-                <SwiperSlide className="bahana"><img src={bahama} alt="bahana" /></SwiperSlide>
+                <SwiperSlide className="bahana"><img src={bahana} alt="bahana" /></SwiperSlide>
                 <SwiperSlide className="habatour"><img src={habatour} alt="habatour" /></SwiperSlide>
+                <SwiperSlide className="BBS"><img src={RihlahTK} alt="Rihlah TK" /></SwiperSlide>
                 <SwiperSlide className="halakah"><img src={halakah} alt="halakah" /></SwiperSlide>
                 <SwiperSlide className="kronika"><img src={kronika} alt="kronika" /></SwiperSlide>
                 <SwiperSlide className="nyamanin"><img src={nyamanin} alt="nyamanin" /></SwiperSlide>
