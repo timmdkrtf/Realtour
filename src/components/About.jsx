@@ -3,7 +3,7 @@ import logoRealtourSecondary from '../assets/img/icon-clients/2. Realtour Logo U
 
 function About(){
     return(
-        <div id="about" style={{padding:"40px 0 0 0"}}>
+        <div id="about">
         <div className="about">
             <div className="container">
                 <div className="content-flex">
