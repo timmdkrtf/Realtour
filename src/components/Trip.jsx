@@ -108,30 +108,30 @@ function Trip() {
       },
     ],
     'private-trip': [
-      {
-        mainTitle: "Diberikan Pelayanan terpercaya",
-        img: perTrip5,
-      },
-      {
-        mainTitle: "Perjalanan private hanya dengan Temanmu",
-        img: perTrip6,
-      },
-      {
-        mainTitle: "Memahami Objek Sekitar",
-        img: perTrip2,
-      },
-      {
-        mainTitle: "Nikmati Pengalaman liburanmu",
-        img: perTrip3,
-      },
-      {
-        mainTitle: "Dipandu dengan hati dan profesional",
-        img: perTrip1,
-      },
-      {
-        mainTitle: "Tenangkan pikiranmu dengan wisata alam",
-        img: perTrip4,
-      },
+      // {
+      //   mainTitle: "Diberikan Pelayanan terpercaya",
+      //   img: perTrip5,
+      // },
+      // {
+      //   mainTitle: "Perjalanan private hanya dengan Temanmu",
+      //   img: perTrip6,
+      // },
+      // {
+      //   mainTitle: "Memahami Objek Sekitar",
+      //   img: perTrip2,
+      // },
+      // {
+      //   mainTitle: "Nikmati Pengalaman liburanmu",
+      //   img: perTrip3,
+      // },
+      // {
+      //   mainTitle: "Dipandu dengan hati dan profesional",
+      //   img: perTrip1,
+      // },
+      // {
+      //   mainTitle: "Tenangkan pikiranmu dengan wisata alam",
+      //   img: perTrip4,
+      // },
       {
         mainTitle: "Hunting Spot Instagramable",
         img: perTrip7,

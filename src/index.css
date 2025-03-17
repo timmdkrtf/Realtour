@@ -921,17 +921,30 @@ footer::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Warna gelap dengan transparansi */
-  z-index: 1; /* Menempatkan lapisan gelap di atas gambar latar belakang */
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
-
 footer > * {
   position: relative;
-  z-index: 2; /* Menempatkan konten footer di atas lapisan gelap */
+  z-index: 2; 
 }
 
-footer .text-center p{
-  font-size: 14px;
+footer .small{
+  color: white;
+  opacity: 0.6;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+}
+
+footer .mt-3 a{
+  font-family: "Open Sans", sans-serif;
+}
+
+footer .text-end{
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 0 -4px 0;
 }
 
 
