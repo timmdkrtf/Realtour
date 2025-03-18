@@ -40,7 +40,7 @@ const Footer = () => {
             </div>
           </Col>
           <Col md={6} className="text-center text-md-end">
-            <Nav className="justify-content-center justify-content-md-end mb-3">
+            <Nav className="justify-content-center justify-content-md-end">
               <Nav.Link href="https://www.tiktok.com/@realtour.co.id" className="text-white fs-3 me-1">
                 <FaTiktok />
               </Nav.Link>
