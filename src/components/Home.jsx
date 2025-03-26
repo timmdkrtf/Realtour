@@ -13,7 +13,7 @@ import Bg2 from "../assets/img/img2/MDK09947.webp"
 import Bg3 from "../assets/img/img2/MDK06191.webp"
 import Bg4 from "../assets/img/img2/MDK06325.webp"
 // import Bg5 from "../assets/img/img2/MDK06398.webp"
-import Bg5 from "../assets/img/img2/DNW-00425.webp"
+import Bg5 from "../assets/img/img2/DNW-00351.jpg"
 import Bg6 from "../assets/img/img2/MDK09386.webp"
 
 function Home(){
