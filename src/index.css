@@ -1102,7 +1102,7 @@ footer .text-end{
     content: "";
     position: absolute;
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     z-index: 4;
     background: radial-gradient(circle, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.8) 100%);
   }
@@ -1718,6 +1718,10 @@ footer .text-end{
 }
 
 footer .text-center p{
+  font-size: 11px;
+}
+
+footer .text-end{
   font-size: 11px;
 }
 }
