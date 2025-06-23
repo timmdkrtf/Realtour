@@ -11,18 +11,22 @@ import trip8 from "../assets/img/study-tour/DNW-04452.png";
 import trip9 from "../assets/img/study-tour/MDK06341.png";
 import trip10 from "../assets/img/study-tour/IMG-20250306.png";
 
-import perTrip1 from "../assets/img/personal-trip/guide1.webp"
-import perTrip2 from "../assets/img/personal-trip/personal-guide.webp"
-import perTrip3 from "../assets/img/personal-trip/personal-trip1.webp"
-import perTrip4 from "../assets/img/personal-trip/personal-trip2.webp"
-import perTrip5 from "../assets/img/personal-trip/guide2.webp"
-import perTrip6 from "../assets/img/personal-trip/MDK08609 (1).webp"
 import perTrip7 from "../assets/img/personal-trip/MDK06265.png"
 import perTrip8 from "../assets/img/personal-trip/MDR04353-1.png"
 import perTrip9 from "../assets/img/personal-trip/MDK06267.png"
 import perTrip10 from "../assets/img/personal-trip/MDK09443.png"
 import perTrip11 from "../assets/img/personal-trip/MDK09326.png"
 import perTrip12 from "../assets/img/personal-trip/MDK00153.png"
+
+import BromoJeep from "../assets/img/personal-trip/Bromo-Jeep.png"
+import BukitSikapuk from "../assets/img/personal-trip/Bukit-Sikapuk.png"
+import CandiArjuna from "../assets/img/personal-trip/Candi-Arjuna.png"
+import GelaranIndah from "../assets/img/personal-trip/Gelaran-Indah-Goa-Pindul.png"
+
+import KawahSikidang from "../assets/img/personal-trip/Kawah-Sikidang.png"
+import MuseumPetilasan from "../assets/img/personal-trip/museum-petilasan-mbah-maridjan.png"
+import Prambanan from "../assets/img/personal-trip/prambanan.png"
+import WisataAlamBatu from "../assets/img/personal-trip/Wisata-Alam-Batu-Pandang-Ratapan-Angin.png"
 
 import outing1 from "../assets/img/outing/default-cover.webp"
 import outing2 from "../assets/img/outing/outing-mountain.webp"
@@ -108,30 +112,46 @@ function Trip() {
       },
     ],
     'private-trip': [
-      // {
-      //   mainTitle: "Diberikan Pelayanan terpercaya",
-      //   img: perTrip5,
-      // },
-      // {
-      //   mainTitle: "Perjalanan private hanya dengan Temanmu",
-      //   img: perTrip6,
-      // },
-      // {
-      //   mainTitle: "Memahami Objek Sekitar",
-      //   img: perTrip2,
-      // },
-      // {
-      //   mainTitle: "Nikmati Pengalaman liburanmu",
-      //   img: perTrip3,
-      // },
-      // {
-      //   mainTitle: "Dipandu dengan hati dan profesional",
-      //   img: perTrip1,
-      // },
-      // {
-      //   mainTitle: "Tenangkan pikiranmu dengan wisata alam",
-      //   img: perTrip4,
-      // },
+      {
+        mainTitle: "Private Trip Bromo-Jogja",
+        img: BromoJeep,
+        desc: "Bromo Jeep Adventure"
+      },
+      {
+        mainTitle: "Private Trip Bromo-Jogja",
+        img: GelaranIndah,
+        desc: "Gelaran Indah Goa Pindul"
+      },
+      {
+        mainTitle: "Private Trip Bromo-Jogja",
+        img: Prambanan,
+        desc: "Candi Prambanan"
+      },
+      {
+        mainTitle: "Private Trip Bromo-Jogja",
+        img: MuseumPetilasan,
+        desc: "Museum Petilasan Mbah Maridjan"
+      },
+      {
+        mainTitle: "Private Trip Dieng",
+        img: CandiArjuna,
+        desc: "Candi Arjuna"
+      },
+      {
+        mainTitle: "Private Trip Dieng",
+        img: KawahSikidang,
+        desc: "Kawah Sikidang"
+      },
+      {
+        mainTitle: "Private Trip Dieng",
+        img: WisataAlamBatu,
+        desc: "Wisata Alam Batu Pandang Ratapan Angin"
+      },
+      {
+        mainTitle: "Private Trip Dieng",
+        img: BukitSikapuk,
+        desc: "Bukit Sikapuk"
+      },
       {
         mainTitle: "Hunting Spot Instagramable",
         img: perTrip7,

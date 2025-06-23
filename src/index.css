@@ -457,7 +457,7 @@ transition-property: width, left;
   border-radius: 10px;
 }
 
-.offer .content .popular-offer .card-offer .image-container::after{
+/* .offer .content .popular-offer .card-offer .image-container::after{
   content: "Coming Soon";
   color: #ffffff;
   font-family: "Be Vietnam Pro", sans-serif;
@@ -471,7 +471,7 @@ transition-property: width, left;
   opacity: 1;
   top: 0;
   left: 0;
-}
+} */
 
 .offer .content .popular-offer .card-offer .image-container img {
   width: 100%;
@@ -658,6 +658,7 @@ transition-property: width, left;
   width: 65%;
   margin: 0 auto;
   position: relative;
+  z-index: 0;
 }
 
 .slider-nav {
@@ -678,10 +679,10 @@ transition-property: width, left;
 
 .slider-for p{
     font-family: "Montserrat", sans-serif;
-}
-
-.slider-for .text-white p{
-  padding: 0 0 0 10px;
+      text-shadow: 1px 1px 0px #000000, -1px -1px 0px #F56E12;
+        padding: 0 0 0 10px;
+        z-index: 100;
+        position: relative;
 }
 
 .slider-for button {
@@ -696,6 +697,7 @@ transition-property: width, left;
   color: white;
   background-color: rgba(229, 231, 235, 0.2) !important;
 }
+
 
 .slider-for .text-white.position-absolute {
   margin: -70px 0 0 30px !important;
