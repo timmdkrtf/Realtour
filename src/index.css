@@ -903,6 +903,102 @@ transition-property: width, left;
   width: 250px;
 }
 
+.testimoni{
+  height: auto;
+  /* background-color: #fff; */
+  background-image: url('../src/assets/img/view/33.png');
+  background-size: cover;
+  background-position: 100% 100%;
+  position: relative;
+  box-shadow: 0 -4px 4px #c4c4c4, 0 4px 4px #c4c4c4;
+  padding: 100px 0;
+}
+
+.testimoni::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255, 0.6);
+  top: 0;
+}
+
+.testimoni::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-image: url('../src/assets/img/wave-full.png');
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.testimoni .container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimoni .container .content{
+  width: 90%;
+  height: auto;
+  /* background-image: url('../src/assets/img/bg-board.png');
+  background-size: cover;
+  border-image: url('../src/assets/img/border-image-wood.png') 20 stretch;
+  border-width: 20px;
+  border-style: solid; */
+  background-color: rgb(255, 255, 255, 0.9);
+  border-radius: 40px;
+  z-index: 3;
+  padding: 30px 30px 50px 30px;
+}
+
+.testimoni .content .title h4{
+    font-family: "Be Vietnam Pro", sans-serif;
+    width: fit-content;
+    background-color: #004AAD;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    box-shadow: -4px -4px 0 0 #F56E12;
+    transform: translateY(-50px);
+}
+
+.testimoni .content .sticky{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.testimoni .content .sticky .note{
+  width: calc(33% - 17px);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.testimoni .content .sticky .note.a{
+  background-image: url('../src/assets/img/25.png');
+  height: 300px;
+  margin: 15px 0 0 0;
+  filter: drop-shadow(-4px 4px 0 #dbd2ba);
+}
+
+.testimoni .content .sticky .note.b{
+  background-image: url('../src/assets/img/24.png');
+  height: 340px;
+}
+
+.testimoni .content .sticky .note.c{
+  background-image: url('../src/assets/img/26.png');
+  height: 325px;
+  filter: drop-shadow(5px 5px 0 #dbd2ba);
+}
 
 /* footer */
 footer {
@@ -912,7 +1008,7 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Noto Serif", serif;
-  box-shadow: 0 -4px 4px #c4c4c4;
+  /* box-shadow: 0 -4px 4px #444444; */
   
 }
 
@@ -1066,6 +1162,24 @@ footer .text-end{
     object-fit: contain;
     margin-top: 7px;
   }
+
+  .testimoni .content .sticky .note{
+    width: calc(33% - 18px);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.testimoni .content .sticky .note.a{
+  height: 280px;
+}
+
+.testimoni .content .sticky .note.b{
+  height: 280px;
+}
+
+.testimoni .content .sticky .note.c{
+  height: 280px;
+}
 }
 
 @media screen and (max-width: 991px) {
@@ -1219,6 +1333,22 @@ footer .text-end{
     width: 90%;
     margin: 0 auto;
   }
+
+  .testimoni .container .content{
+    width: 100%;
+  }
+
+.testimoni .content .sticky .note.a{
+  height: 230px;
+}
+
+.testimoni .content .sticky .note.b{
+  height: 230px;
+}
+
+.testimoni .content .sticky .note.c{
+  height: 230px;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -1372,6 +1502,13 @@ footer .text-end{
     justify-content: center; /* Pusatkan konten dalam slide */
   }
 
+  .testimoni .content .sticky{
+    justify-content: center;
+  }
+
+  .testimoni .content .sticky .note{
+    width: calc(50% - 15px);
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1586,6 +1723,45 @@ footer .text-end{
   object-fit: contain;
   margin-top: 7px;
 }
+
+.testimoni .container .content{
+  width: 90%;
+}
+
+.testimoni .content .sticky{
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimoni .content .sticky .note{
+  width: 90%;
+}
+
+.testimoni .content .sticky .note.a{
+  height: 370px;
+}
+
+.testimoni .content .sticky .note.b{
+  height: 440px;
+}
+
+.testimoni .content .sticky .note.c{
+  height: 430px;
+}
+}
+
+@media screen and (max-width: 440px){
+  .testimoni .content .sticky .note.a{
+  height: 280px;
+}
+
+.testimoni .content .sticky .note.b{
+  height: 330px;
+}
+
+.testimoni .content .sticky .note.c{
+  height: 320px;
+}
 }
 
 @media screen and (max-width: 380px) {
@@ -1726,4 +1902,31 @@ footer .text-center p{
 footer .text-end{
   font-size: 11px;
 }
+
+.testimoni .container .content{
+  width: 100%;
+  padding: 20px 20px 30px 20px;
+}
+
+.testimoni .content .sticky{
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimoni .content .sticky .note{
+  width: 100%;
+}
+
+.testimoni .content .sticky .note.a{
+  height: 300px;
+}
+
+.testimoni .content .sticky .note.b{
+  height: 340px;
+}
+
+.testimoni .content .sticky .note.c{
+  height: 320px;
+}
+
 }

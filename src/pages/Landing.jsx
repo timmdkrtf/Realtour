@@ -6,6 +6,7 @@ import Service from '../components/Service'
 import Offer from '../components/Offer'
 import Trip from '../components/Trip'
 import Client from '../components/Client'
+import Testimoni from '../components/Testimoni'
 
 function Landing(){
     return (
@@ -17,6 +18,7 @@ function Landing(){
             <Offer />
             <Trip />
             <Client />
+            <Testimoni />
             <Footer />
         </div>
     );
