@@ -970,11 +970,11 @@ transition-property: width, left;
     transform: translateY(-50px);
 }
 
-.testimoni .content .sticky{
+/* .testimoni .content .sticky{
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-}
+} */
 
 .testimoni .content .sticky .note{
   width: calc(33% - 17px);
