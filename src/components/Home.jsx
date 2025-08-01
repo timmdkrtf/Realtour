@@ -15,17 +15,25 @@ export default function Home(){
     const [currentImage, setCurrentImage] = useState(0);
     const [fade, setFade] = useState(false);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setFade(true); 
-            setTimeout(() => {
-                setCurrentImage((prev) => (prev + 1) % images.length);
-                setFade(false);
-            }, 300); 
-        }, 6000); 
+useEffect(() => {
+    const interval = setInterval(() => {
+        setFade(true);
 
-        return () => clearInterval(interval);
-    }, []);
+        const nextImageIndex = (currentImage + 1) % images.length;
+        const img = new Image();
+        img.src = images[nextImageIndex];
+
+        img.onload = () => {
+            setTimeout(() => {
+                setCurrentImage(nextImageIndex);
+                setFade(false);
+            }, 300); // Delay fade
+        };
+    }, 6000);
+
+    return () => clearInterval(interval);
+}, [currentImage]);
+
 
     return(
         <div id="home" className={`home ${fade ? "fade-out" : "fade-in"}`} style={{ backgroundImage: `url(${images[currentImage]})` }}>
