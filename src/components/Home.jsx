@@ -1,148 +1,44 @@
-import bgPeople1 from '../assets/img/view/29.webp'
-import bgPeople2 from '../assets/img/view/30.webp'
-import bgView1 from '../assets/img/view/26.webp'
-import bgView2 from '../assets/img/view/28.webp'
+import { useState, useEffect } from "react";
 
-import Slider from "react-slick";
+import view1 from "../assets/img/img2/MDK06325.webp"
+import view2 from "../assets/img/img2/MDK00281.webp"
+import view3 from "../assets/img/img2/MDK00765.jpg"
+import view4 from "../assets/img/img2/MDK09372.jpg"
+import view5 from "../assets/img/img2/MDK00314.jpg"
+import view6 from "../assets/img/img2/MDK09556.jpg"
+import view7 from "../assets/img/img2/MDK09521.jpg"
+import view8 from "../assets/img/img2/MDK00881.jpg"
+const images = [view6, view7, view8, view5, view3, view4, view1, view2];
 
-import { useEffect, useState } from 'react'
+export default function Home(){
 
-import Bg1 from "../assets/img/img2/DNW-01566.webp"
-// import Bg2 from "../assets/img/img2/MDK00281.webp"
-import Bg2 from "../assets/img/img2/MDK09947.webp"
-import Bg3 from "../assets/img/img2/MDK06191.webp"
-import Bg4 from "../assets/img/img2/MDK06325.webp"
-// import Bg5 from "../assets/img/img2/MDK06398.webp"
-import Bg5 from "../assets/img/img2/DNW-00351.jpg"
-import Bg6 from "../assets/img/img2/MDK09386.webp"
-
-function Home(){
-
-    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 991);
+    const [currentImage, setCurrentImage] = useState(0);
+    const [fade, setFade] = useState(false);
 
     useEffect(() => {
-        const handleResize = () => {
-            setIsDesktop(window.innerWidth >= 991);
-        };
+        const interval = setInterval(() => {
+            setFade(true); 
+            setTimeout(() => {
+                setCurrentImage((prev) => (prev + 1) % images.length);
+                setFade(false);
+            }, 300); 
+        }, 6000); 
 
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
+        return () => clearInterval(interval);
     }, []);
 
-    const slide1 = {
-        infinite: true,
-        slidesToShow: 2.5,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 10000,
-        autoplaySpeed: 0,
-        cssEase: "linear",
-        centerMode: true,
-        centerPadding: "10px",
-        arrows: false,
-        responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 2.3,
-              }
-            },
-            {
-              breakpoint: 576,
-              settings: {
-                slidesToShow: 2,
-              }
-            },
-            {
-              breakpoint: 380,
-              settings: {
-                slidesToShow: 1.5,
-              }
-            },
-        ]
-      };
-
-      const slide2 = {
-        infinite: true,
-        slidesToShow: 2.5,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 10000,
-        autoplaySpeed: 0,
-        cssEase: "linear",
-        centerMode: true,
-        centerPadding: "10px",
-        arrows: false,
-        rtl: true,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                  slidesToShow: 2.3,
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                  slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 380,
-                settings: {
-                  slidesToShow: 1.5,
-                }
-            },
-        ]
-      };
-
     return(
-        <div className="home" id="home">
+        <div id="home" className={`home ${fade ? "fade-out" : "fade-in"}`} style={{ backgroundImage: `url(${images[currentImage]})` }}>
             <div className="container">
-                <div className="content-flex">
-                    <div className="content-text">
-                        <h3>Menghadirkan <span className="wisata">Wisata</span> Berkesan dengan Sentuhan <span className="lingkungan">Lingkungan</span> & <span className="budaya">Budaya</span></h3>
-                        <p>Realtour menawarkan pengalaman perjalanan yang seru dan memuaskan, sekaligus memberikan wawasan mendalam tentang lingkungan sekitar. Kami berkomitmen untuk menjadikan setiap perjalanan Anda unik dan penuh makna, dengan pendekatan yang memadukan kesenangan dan edukasi tentang keberlanjutan lingkungan hidup.</p>
-                        <a href="#about" style={{textDecoration:"none"}}><button>Baca Selengkapnya</button></a>
+                <div className="row">
+                    <div className="content">
+                        <h1>
+                            Jelajahi Wisata Berkesan dengan Sentuhan <span className="budaya-alam">Budaya Alam</span>
+                        </h1>
+                            <button className="btn explore">Jelajahi Sekarang</button>
                     </div>
-                    {isDesktop ? ( 
-                        <div className="content-img-grid">
-                            <div className="img top"><img src={bgPeople1} alt="" /></div>
-                            <div className="img right"><img src={bgView1} alt="" /></div>
-                            <div className="img bottom"><img src={bgView2} alt="" /></div>
-                            <div className="img left"><img src={bgPeople2} alt="" /></div>
-                        </div>
-                        ) : (
-                            <div className='slick-img'>
-                                <Slider {...slide1}>
-                                    <div>
-                                        <img src={Bg1} alt="" />
-                                    </div>
-                                    <div>
-                                        <img src={Bg2} alt="" />
-                                    </div>
-                                    <div>
-                                        <img src={Bg3} alt="" />
-                                    </div>
-                                </Slider>
-                                <Slider {...slide2} className='mt-2'>
-                                    <div>
-                                        <img src={Bg4} alt="" />
-                                    </div>
-                                    <div>
-                                        <img src={Bg5} alt="" />
-                                    </div>
-                                    <div>
-                                        <img src={Bg6} alt="" />
-                                    </div>
-                                </Slider>
-                            </div>
-                        )
-                    }
                 </div>
             </div>
         </div>
     );
 }
-
-export default Home;

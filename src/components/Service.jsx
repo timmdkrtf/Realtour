@@ -12,9 +12,9 @@ import waveRight from "../assets/img/gelombang-right.png"
 function Service(){
     return(
         <>
-        <div className="shape-wave-right">
+        {/* <div className="shape-wave-right">
             <img src={waveRight} alt="" />
-        </div>
+        </div> */}
         <div className="shape-wave-left">
             <img src={waveRight} alt="" />
         </div>

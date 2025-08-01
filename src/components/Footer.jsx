@@ -1,6 +1,6 @@
 import { FaTiktok } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
-import logoRealtour from "../assets/img/icon-clients/2. Realtour Logo Utama (N).png";
+import logoRealtour from "../assets/img/icon-clients/realtour2.png";
 import { Container, Row, Col, Nav } from "react-bootstrap";
 
 import { BsFillTelephoneFill } from "react-icons/bs";

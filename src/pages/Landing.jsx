@@ -7,6 +7,7 @@ import Offer from '../components/Offer'
 import Trip from '../components/Trip'
 import Client from '../components/Client'
 import Testimoni from '../components/Testimoni'
+import BtnFloat from "../components/BtnFloat"
 
 function Landing(){
     return (
@@ -19,6 +20,7 @@ function Landing(){
             <Trip />
             <Client />
             <Testimoni />
+            <BtnFloat />
             <Footer />
         </div>
     );
