@@ -98,27 +98,27 @@ const Client = () => {
                     },
                   }}
                 className='items-center justify-center'>
-                <SwiperSlide className="apostrof"><img src={apostrof} alt="apostrof" /></SwiperSlide>
-                <SwiperSlide className="ask"><img src={ask} alt="ask" /></SwiperSlide>
-                <SwiperSlide className="bahana"><img src={bahana} alt="bahana" /></SwiperSlide>
-                <SwiperSlide className="habatour"><img src={habatour} alt="habatour" /></SwiperSlide>
-                <SwiperSlide className="BBS"><img src={RihlahTK} alt="Rihlah TK" /></SwiperSlide>
-                <SwiperSlide className="halakah"><img src={halakah} alt="halakah" /></SwiperSlide>
-                <SwiperSlide className="kronika"><img src={kronika} alt="kronika" /></SwiperSlide>
-                <SwiperSlide className="nyamanin"><img src={nyamanin} alt="nyamanin" /></SwiperSlide>
-                <SwiperSlide className="AYP"><img src={AYP} alt="Arsjad Yusuf and Partners" /></SwiperSlide>
-                <SwiperSlide className="HYS"><img src={HYS} alt="Heppy Yoga Studio" /></SwiperSlide>
-                <SwiperSlide className="BBS"><img src={BBS} alt="Bina Bangsa Sejahtera" /></SwiperSlide>
-                <SwiperSlide className="TMC"><img src={TMC} alt="Thamrin Meyer Corporation" /></SwiperSlide>
-                <SwiperSlide className="InKa"><img src={InKa} alt="Insan Kamil" /></SwiperSlide>
-                <SwiperSlide className="TMF"><img src={TMF} alt="Thamrin Meyer Foundation" /></SwiperSlide>
-                <SwiperSlide className="kronika"><img src={mdkrtf} alt="mdkrtf" /></SwiperSlide>
-                <SwiperSlide className="InKa"><img src={Majlis} alt="Majlis" /></SwiperSlide>
-                <SwiperSlide className="aka"><img src={aka} alt="aka" /></SwiperSlide>
+                <SwiperSlide className="apostrof"><img src={apostrof} alt="apostrof" loading="lazy" /></SwiperSlide>
+                <SwiperSlide className="ask"><img src={ask} alt="ask" loading="lazy" /></SwiperSlide>
+                <SwiperSlide className="bahana"><img src={bahana} alt="bahana" loading="lazy" /></SwiperSlide>
+                <SwiperSlide className="habatour"><img src={habatour} alt="habatour" loading="lazy" /></SwiperSlide>
+                <SwiperSlide className="BBS"><img src={RihlahTK} alt="Rihlah TK" loading="lazy" /></SwiperSlide>
+                <SwiperSlide className="halakah"><img src={halakah} alt="halakah" loading="lazy" /></SwiperSlide>
+                <SwiperSlide className="kronika"><img src={kronika} alt="kronika" loading="lazy" /></SwiperSlide>
+                <SwiperSlide className="nyamanin"><img src={nyamanin} alt="nyamanin" loading="lazy" /></SwiperSlide>
+                <SwiperSlide className="AYP"><img src={AYP} alt="Arsjad Yusuf and Partners" loading="lazy" /></SwiperSlide>
+                <SwiperSlide className="HYS"><img src={HYS} alt="Heppy Yoga Studio" loading="lazy" /></SwiperSlide>
+                <SwiperSlide className="BBS"><img src={BBS} alt="Bina Bangsa Sejahtera" loading="lazy" /></SwiperSlide>
+                <SwiperSlide className="TMC"><img src={TMC} alt="Thamrin Meyer Corporation" loading="lazy" /></SwiperSlide>
+                <SwiperSlide className="InKa"><img src={InKa} alt="Insan Kamil" loading="lazy" /></SwiperSlide>
+                <SwiperSlide className="TMF"><img src={TMF} alt="Thamrin Meyer Foundation" loading="lazy" /></SwiperSlide>
+                <SwiperSlide className="kronika"><img src={mdkrtf} alt="mdkrtf" loading="lazy" /></SwiperSlide>
+                <SwiperSlide className="InKa"><img src={Majlis} alt="Majlis" loading="lazy" /></SwiperSlide>
+                <SwiperSlide className="aka"><img src={aka} alt="aka" loading="lazy" /></SwiperSlide>
             </Swiper>
         </section>
         <div className='wave-right-client'>
-            <img src={waveRight} alt="" />
+            <img src={waveRight} alt="" loading="lazy" />
         </div>
         </>
     );

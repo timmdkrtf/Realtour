@@ -21,7 +21,7 @@ function Offer(){
             </Modal.Header>
             <Modal.Body>
                 <div>
-                    <img src={FlyerBromoJogja} alt="" />
+                    <img src={FlyerBromoJogja} alt="" loading="lazy" />
                 </div>
             </Modal.Body>
             <Modal.Footer>
@@ -40,7 +40,7 @@ function Offer(){
                     <div className="popular-offer">
                         <div className="card-offer">
                             <div className="image-container">
-                                <img src={FlyerBromoJogja} alt="" />
+                                <img src={FlyerBromoJogja} alt="" loading="lazy" />
                                 <div className="overlay">
                                     <div className="text-offer">
                                         <small>Kuota Terbatas</small>
@@ -61,7 +61,7 @@ function Offer(){
                 </div>
             </div>
             <div className="icon-wave">
-                <img src={WaveLeft} alt="" />
+                <img src={WaveLeft} alt="" loading="lazy" />
             </div>
         </div>
         </>

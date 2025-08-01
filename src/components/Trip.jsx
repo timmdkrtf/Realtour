@@ -299,7 +299,7 @@ function Trip() {
         <Slider {...settingsFor} className="slider-for">
           {slides[activeSlide].map((slide, index) => (
             <div key={index} className="image-wrapper position-relative">
-              <img src={slide.img} alt="slide" className="img-fluid rounded w-100" />
+              <img src={slide.img} alt="slide" className="img-fluid rounded w-100" loading="lazy" />
               <div className="text-white position-absolute">
                 <h4 style={{margin:"-40px 0 0 0"}}>{slide.mainTitle}</h4>
                 { typeof slide.desc === "string"? <p>{slide.desc}</p> : ""}
@@ -311,7 +311,7 @@ function Trip() {
         <Slider {...settingsNav} className="slider-nav mt-4 pt-3">
           {slides[activeSlide].map((slide, index) => (
             <div key={index} className="px-2">
-              <img src={slide.img} alt="thumbnail" className="img-fluid rounded" />
+              <img src={slide.img} alt="thumbnail" className="img-fluid rounded" loading="lazy"/>
             </div>
           ))}
         </Slider>

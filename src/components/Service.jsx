@@ -16,7 +16,7 @@ function Service(){
             <img src={waveRight} alt="" />
         </div> */}
         <div className="shape-wave-left">
-            <img src={waveRight} alt="" />
+            <img src={waveRight} alt="" loading="lazy" />
         </div>
         <div className="service" id="service">
             <div className="img-bg">
@@ -27,35 +27,35 @@ function Service(){
                 </div>
                 <div className="card-content">
                     <div className="card">
-                        <img src={Transport} alt="" />
+                        <img src={Transport} alt="" loading="lazy" />
                         <p>Transportasi</p>
                     </div>
                     <div className="card">
-                        <img src={Travel} alt="" />
+                        <img src={Travel} alt="" loading="lazy" />
                         <p>Wisata Global</p>
                     </div>
                     <div className="card">
-                        <img src={Program} alt="" />
+                        <img src={Program} alt="" loading="lazy" />
                         <p>Program Pariwisata</p>
                     </div>
                     <div className="card">
-                        <img src={Hotel} alt="" />
+                        <img src={Hotel} alt="" loading="lazy" />
                         <p>Pemesanan Hotel</p>
                     </div>
                     <div className="card">
-                        <img src={View} alt="" />
+                        <img src={View} alt="" loading="lazy" />
                         <p>Edukasi Objek Kunjungan</p>
                     </div>
                     <div className="card">
-                        <img src={Culture} alt="" />
+                        <img src={Culture} alt="" loading="lazy" />
                         <p>Edukasi Budaya</p>
                     </div>
                     <div className="card">
-                        <img src={Environment} alt="" />
+                        <img src={Environment} alt="" loading="lazy" />
                         <p>Edukasi Peduli Lingkungan</p>
                     </div>
                     <div className="card">
-                        <img src={Care} alt="" />
+                        <img src={Care} alt="" loading="lazy" />
                         <p>Aksi Peduli Lingkungan</p>
                     </div>
                 </div>
