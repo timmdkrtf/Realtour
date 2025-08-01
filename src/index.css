@@ -238,6 +238,7 @@ body {
 .about .content-flex .video-youtube .video span {
   font-size: 15px;
   text-align: justify;
+  font-family: "Noto Serif", sans-serif;
 }
 
 .about .content-flex .video-youtube .btn-more {
