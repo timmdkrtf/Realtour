@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 
 import view1 from "../assets/img/img2/MDK06325.webp"
 import view2 from "../assets/img/img2/MDK00281.webp"
-import view3 from "../assets/img/img2/MDK00765.jpg"
-import view4 from "../assets/img/img2/MDK09372.jpg"
-import view5 from "../assets/img/img2/MDK00314.jpg"
-import view6 from "../assets/img/img2/MDK09556.jpg"
-import view7 from "../assets/img/img2/MDK09521.jpg"
-import view8 from "../assets/img/img2/MDK00881.jpg"
+import view3 from "../assets/img/img2/MDK00765.webp"
+import view4 from "../assets/img/img2/MDK09372.webp"
+import view5 from "../assets/img/img2/MDK00314.webp"
+import view6 from "../assets/img/img2/MDK09556.webp"
+import view7 from "../assets/img/img2/MDK09521.webp"
+import view8 from "../assets/img/img2/MDK00881.webp"
 const images = [view6, view7, view8, view5, view3, view4, view1, view2];
 
 export default function Home(){
