@@ -98,7 +98,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .home::before {
@@ -117,7 +117,7 @@ body {
 }
 
 .fade-out {
-  opacity: 0;
+  opacity: 0.8;
 }
 
 .home .row {

@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 
-import view1 from "../assets/img/img2/MDK06325.webp"
-import view2 from "../assets/img/img2/MDK00281.webp"
-import view3 from "../assets/img/img2/MDK00765.webp"
-import view4 from "../assets/img/img2/MDK09372.webp"
-import view5 from "../assets/img/img2/MDK00314.webp"
-import view6 from "../assets/img/img2/MDK09556.webp"
-import view7 from "../assets/img/img2/MDK09521.webp"
-import view8 from "../assets/img/img2/MDK00881.webp"
+import view1 from "../assets/img/img3/MDK06325.webp"
+import view2 from "../assets/img/img3/MDK00281.webp"
+import view3 from "../assets/img/img3/MDK00765.webp"
+import view4 from "../assets/img/img3/MDK09372.webp"
+import view5 from "../assets/img/img3/MDK00314.webp"
+import view6 from "../assets/img/img3/MDK09556.webp"
+import view7 from "../assets/img/img3/MDK09521.webp"
+import view8 from "../assets/img/img3/MDK00881.webp"
 const images = [view6, view7, view8, view5, view3, view4, view1, view2];
 
 export default function Home(){
@@ -15,25 +15,17 @@ export default function Home(){
     const [currentImage, setCurrentImage] = useState(0);
     const [fade, setFade] = useState(false);
 
-useEffect(() => {
-    const interval = setInterval(() => {
-        setFade(true);
-
-        const nextImageIndex = (currentImage + 1) % images.length;
-        const img = new Image();
-        img.src = images[nextImageIndex];
-
-        img.onload = () => {
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setFade(true); 
             setTimeout(() => {
-                setCurrentImage(nextImageIndex);
+                setCurrentImage((prev) => (prev + 1) % images.length);
                 setFade(false);
-            }, 300); // Delay fade
-        };
-    }, 6000);
+            }, 300); 
+        }, 6000); 
 
-    return () => clearInterval(interval);
-}, [currentImage]);
-
+        return () => clearInterval(interval);
+    }, []);
 
     return(
         <div id="home" className={`home ${fade ? "fade-out" : "fade-in"}`} style={{ backgroundImage: `url(${images[currentImage]})` }}>
