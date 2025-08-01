@@ -67,7 +67,7 @@ function Offer(){
                                         <p>Lakukan Perjalanan Menyenangkan ke Dieng, dengan menikmati keindahan alam, suasana indah gunung dieng, dan lain sebagainya</p>
                                         <div className="d-flex">
                                             <Button onClick={handleShow1}>Lihat detail</Button>
-                                            <a href="https://api.whatsapp.com/send?phone=6281213779357" style={{color:"white", textDecoration:"none"}} target="_blank">Contact Us</a>
+                                            <a href="https://api.whatsapp.com/send?phone=6281213779357&text=saya%20tertarik%20dengan%20paket%20Dieng%20Private%20Trip%203D1N" style={{color:"white", textDecoration:"none"}} target="_blank">Contact Us</a>
                                         </div>
                                     </div>
                                 </div>
@@ -83,7 +83,7 @@ function Offer(){
                                         <p>Lakukan Perjalanan Menyenangkan ke Nepal Van Java, dengan menikmati keindahan alam, dan lain sebagainya</p>
                                         <div className="d-flex">
                                             <Button onClick={handleShow2}>Lihat detail</Button>
-                                            <a href="https://api.whatsapp.com/send?phone=6281213779357" style={{color:"white", textDecoration:"none"}} target="_blank">Contact Us</a>
+                                            <a href="https://api.whatsapp.com/send?phone=6281213779357&text=saya%20tertarik%20dengan%20paket%20Liburan%20ke%20Nepal%20Van%20Java" style={{color:"white", textDecoration:"none"}} target="_blank">Contact Us</a>
                                         </div>
                                     </div>
                                 </div>
