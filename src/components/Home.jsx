@@ -35,7 +35,7 @@ export default function Home(){
                         <h1>
                             Jelajahi Wisata Berkesan dengan Sentuhan <span className="budaya-alam">Budaya Alam</span>
                         </h1>
-                            <button className="btn explore">Jelajahi Sekarang</button>
+                            <a className="btn explore" href="#about">Jelajahi Sekarang</a>
                     </div>
                 </div>
             </div>
