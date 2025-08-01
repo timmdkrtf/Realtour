@@ -437,12 +437,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 60px 0;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
 }
 
 .offer .content .popular-offer .card-offer {
-  width: 100%;
+  width: calc(33% - 20px);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -459,7 +459,7 @@ body {
 
 .offer .content .popular-offer .card-offer .image-container {
   position: relative;
-  width: 32% !important;
+  width: 100% !important;
   overflow: hidden;
   border-radius: 10px;
 }
